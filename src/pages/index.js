@@ -15,8 +15,6 @@ export default function Home() {
       </Head>
 <main className='flex items-center text-dark w-full min-h-screen'>
 
-  
-
 <Layout className='pt=0'>
 
 <div className="flex items-center justify-between w-full">
@@ -24,6 +22,8 @@ export default function Home() {
 </div>
 
 </Layout>
+
+
 
 </main>
     </>
