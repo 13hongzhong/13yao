@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import { LinkArrow } from '@/components/Icons';
 
 const Layout = () => {
     return (
@@ -9,7 +11,7 @@ const Layout = () => {
                         height: 100%;
                         margin: 0;
                         padding: 0;
-                        overflow: hidden;  /* Prevent scrolling */
+                         /* Prevent scrolling */
                     }
                     .layout-container {
                         height: 70vh;  /* Slightly less than full viewport height */
@@ -22,6 +24,75 @@ const Layout = () => {
                         flex-grow: 1;
                         overflow-y: auto;
                     }
+                    .buttons {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        margin-top: 10px;
+                        justify-content: center;
+                    }
+                    .button {
+                        display: flex;
+                        align-items: center;
+                        background-color: #333;
+                        color: #fff;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 600;
+                        border: 2px solid transparent;
+                        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+                    }
+                    .button:hover {
+                        background-color: #fff;
+                        color: #333;
+                        border-color: #333;
+                    }
+                    @media (max-width: 768px) {
+                        .layout-container {
+                            height: auto; /* Allow height to adjust on smaller screens */
+                            margin-top: 0; /* Remove negative margin */
+                            border-width: 10px; /* Adjust border width */
+                        }
+                        .layout-container::before {
+                            display: none; /* Hide background div */
+                        }
+                        .md\\:w-5\\/12, .md\\:w-7\\/12 {
+                            width: 100%; /* Full width for smaller screens */
+                        }
+                        .min-h\\-[400px] {
+                            min-height: 250px; /* Adjust height */
+                        }
+                        .flex-col {
+                            flex-direction: column; /* Stack items vertically */
+                        }
+                        .mx-auto {
+                            margin: 0 auto; /* Center the container */
+                            padding: 0 10px; /* Add padding */
+                        }
+                        .mt-[-70px] {
+                            margin-top: 20px; /* Adjust margin-top */
+                        }
+                        .min-h\\-[30px] {
+                            min-height: 50px; /* Adjust height */
+                        }
+                        .text-[90px] {
+                            font-size: 30px; /* Adjust font size */
+                        }
+                        .bg-cover {
+                            background-size: cover; /* Cover background image */
+                        }
+                        .buttons {
+                            gap: 5px; /* Reduce gap between buttons */
+                            flex-wrap: nowrap; /* Prevent wrapping */
+                            justify-content: center; /* Center buttons */
+                        }
+                        .button {
+                            font-size: 14px;
+                            padding: 8px 16px;
+                        }
+                    }
                 `}
             </style>
             <div className="layout-container mx-auto max-w-[1100px] relative overflow-hidden border-l-[15px] border-[#CD5151] border-r-[15px] border-[#CD5151] rounded-[30px] mt-[-70px]">
@@ -29,7 +100,6 @@ const Layout = () => {
                     <div className="w-1/3 flex bg-red overflow-hidden">
                         <div className="flex items-center ml-[-100px]">
                             <span className="fa-stack fa-2x text-[90px]">
-               
                             </span>
                         </div>
                     </div>
@@ -45,14 +115,22 @@ const Layout = () => {
                                     filter: 'drop-shadow(3px 3px #fff) drop-shadow(-3px -3px #CD5151)' }}
                                 >
                             </div>
+                            <div className='buttons'> {/* Container for buttons */}
+                                <Link href="/dummy.pdf" target={"_blank"}
+                                    className="button"
+                                    download={true}
+                                >
+                                    Resume <LinkArrow className={"w-6 ml-1"} />
+                                </Link>
+                                <Link href="mailto:cuit980@gmail.com" target={"_blank"}
+                                    className="button"
+                                >Contact</Link>
+                            </div>
                         </div>
                         <div className="md:w-7/12 p-2 md:px-3 my-auto flex flex-col bg-[#CD5151]">
                             <div className="text-center mt-1 mb-3 text-white relative z-[6]">
                                 <div className="text-uppercase mb-n1 font-serif font-black text-[90px] tracking-wider drop-shadow-lg">
-                                <span className="bold" style={{ fontSize: '0.6em' }}>Kagu</span> <span style={{ fontSize: '0.4em' }}>&#10047;</span> <span style={{ fontSize: '0.6em' }}>白板</span>
-
-
-
+                                    <span className="bold" style={{ fontSize: '0.6em' }}>Kagu</span> <span style={{ fontSize: '0.4em' }}>&#10047;</span> <span style={{ fontSize: '0.6em' }}>白板</span>
                                 </div>
                                 <p className="text-uppercase font-mono italic text-[85%] tracking-wider">illustrator . writer . developer</p>
                             </div>
@@ -67,7 +145,6 @@ const Layout = () => {
                                     </div>
                                 </div>
                             </div>
-                        
                         </div>
                     </div>
                 </div>
