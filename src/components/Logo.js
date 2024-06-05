@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Logo = () => {
     return (
-        <div className='flex items-center justify-center mt-2'>
+        <div className='flex items-center justify-center mt-0.5'>
             <Link href="/">
                 <Image
                     src="/images/profile/logo_flower.png" 
