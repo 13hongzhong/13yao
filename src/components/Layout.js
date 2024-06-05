@@ -28,13 +28,14 @@ const Layout = () => {
                         display: flex;
                         flex-wrap: wrap;
                         gap: 10px;
-                        margin-top: 10px;
+                        margin-top: -8px;
+                        margin-right: 13px;
                         justify-content: center;
                     }
                     .button {
                         display: flex;
                         align-items: center;
-                        background-color: #333;
+                        background-color: #C43737;
                         color: #fff;
                         padding: 10px 20px;
                         border-radius: 5px;
