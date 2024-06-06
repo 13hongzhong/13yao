@@ -18,6 +18,7 @@ module.exports = {
         primaryDark: "#58E6D9", // 80,230,217
         red: "#D7D7D7",
         pink: "#E3C5BC",
+        footer: "#EFCDC2",
       }
     },
   },

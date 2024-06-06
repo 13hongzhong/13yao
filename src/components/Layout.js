@@ -146,6 +146,7 @@ const Layout = () => {
                                 <div className="p-1">
                                     <div className="min-h-[30px] rounded-[8px] bg-cover bg-center bg-no-repeat"
                                         style={{ backgroundImage: 'url()' }}>
+                                            
                                     </div>
                                 </div>
                             </div>
@@ -153,6 +154,19 @@ const Layout = () => {
                     </div>
                 </div>
             </div>
+
+            <div style={{
+    position: 'absolute',
+    bottom: '-40px', /* Adjust as needed */
+    width: '100%',
+    textAlign: 'center',
+    fontSize: '20px', /* Adjust as needed */
+    color: '#ffd4c5', /* Change color to white */
+    textShadow: '0 0 3px rgb(77, 39, 39)' /* Add a subtle black outline */
+}}>
+    *＊✿❀✧❀✿＊*
+</div>
+
         </>
     );
 };
