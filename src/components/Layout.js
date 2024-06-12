@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
+import Pagedoll from '@/components/Pagedoll'; // Import the new Pagedoll component
 
 const Layout = () => {
     return (
@@ -11,10 +12,9 @@ const Layout = () => {
                         height: 100%;
                         margin: 0;
                         padding: 0;
-                         
                     }
                     .layout-container {
-                        height: 70vh;  /* Slightly less than full viewport height */
+                        height: 70vh; /* Slightly less than full viewport height */
                         box-sizing: border-box;
                         display: flex;
                         flex-direction: column;
@@ -54,42 +54,42 @@ const Layout = () => {
                     }
                     @media (max-width: 768px) {
                         .layout-container {
-                            height: auto; 
-                            margin-top: 0; 
+                            height: auto;
+                            margin-top: 0;
                             border-width: 10px;
                         }
                         .layout-container::before {
-                            display: none; 
+                            display: none;
                         }
                         .md\\:w-5\\/12, .md\\:w-7\\/12 {
-                            width: 100%; 
+                            width: 100%;
                         }
                         .min-h\\-[400px] {
-                            min-height: 250px; 
+                            min-height: 250px;
                         }
                         .flex-col {
-                            flex-direction: column; 
+                            flex-direction: column;
                         }
                         .mx-auto {
-                            margin: 0 auto; 
-                            padding: 0 10px; 
+                            margin: 0 auto;
+                            padding: 0 10px;
                         }
                         .mt-[-70px] {
-                            margin-top: 20px; 
+                            margin-top: 20px;
                         }
                         .min-h\\-[30px] {
-                            min-height: 50px; 
+                            min-height: 50px;
                         }
                         .text-[90px] {
-                            font-size: 30px; 
+                            font-size: 30px;
                         }
                         .bg-cover {
-                            background-size: cover; 
+                            background-size: cover;
                         }
                         .buttons {
-                            gap: 5px; 
-                            flex-wrap: nowrap; 
-                            justify-content: center; 
+                            gap: 5px;
+                            flex-wrap: nowrap;
+                            justify-content: center;
                         }
                         .button {
                             font-size: 14px;
@@ -156,17 +156,18 @@ const Layout = () => {
             </div>
 
             <div style={{
-    position: 'absolute',
-    bottom: '-40px', /* Adjust as needed */
-    width: '100%',
-    textAlign: 'center',
-    fontSize: '20px', /* Adjust as needed */
-    color: '#ffd4c5', /* Change color to white */
-    textShadow: '0 0 3px rgb(77, 39, 39)' /* Add a subtle black outline */
-}}>
-    *＊✿❀✧❀✿＊*
-</div>
+                position: 'absolute',
+                bottom: '-40px', /* Adjust as needed */
+                width: '100%',
+                textAlign: 'center',
+                fontSize: '20px', /* Adjust as needed */
+                color: '#ffd4c5', /* Change color to white */
+                textShadow: '0 0 3px rgb(77, 39, 39)' /* Add a subtle black outline */
+            }}>
+                *＊✿❀✧❀✿＊*
+            </div>
 
+            <Pagedoll /> {/* Add the Pagedoll component */}
         </>
     );
 };
