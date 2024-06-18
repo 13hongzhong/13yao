@@ -15,9 +15,9 @@ const about = () => {
                     <div className="lg:w-3/12 w-full lg:order-2 order-1 mb-3 px-3">
                         <div className="bg-white rounded-xl p-3 h-full">
                             <img
-                                src="IMG_URL"
+                                src="/images/profile/baiban2.png"
                                 className="block p-2 mx-auto mb-3 rounded-full"
-                                style={{ maxHeight: '210px', background: '#d7d7d7' }}  
+                                style={{ maxHeight: '210px', background: '#d4e7ef' }}  
                                 alt="Avatar"
                             />
                             <div className="flex flex-col space-y-2">
@@ -79,7 +79,7 @@ const about = () => {
                                 <div className="bg-white rounded-xl h-full">
                                     <div
                                         className="h-full bg-cover bg-center"
-                                        style={{ backgroundImage: 'url(IMG_URL)', minHeight: '400px' }}
+                                        style={{ backgroundImage: 'url(/images/profile/baiban1.png)', minHeight: '400px' }}
                                     ></div>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@ const about = () => {
                 <div className="rounded-xl p-3 text-white text-center mt-3" style={{ backgroundColor: '#d7d7d7' }}>  
                     <p className="tracking-wide">
                         <i className="fal fa-quote-left fa-fw mr-1"></i>
-                        <i>Write a quote or tagline here</i>
+                        <i>"Fear is a reason to move forward."</i>
                         <i className="fal fa-quote-right fa-fw ml-1"></i>
                     </p>
                 </div>
