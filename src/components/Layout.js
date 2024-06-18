@@ -78,7 +78,7 @@ const Layout = () => {
                             margin-top: 20px;
                         }
                         .min-h\\-[30px] {
-                            min-height: 50px;
+                            min-height: 10px;
                         }
                         .text-[90px] {
                             font-size: 30px;
@@ -164,7 +164,7 @@ const Layout = () => {
                 color: '#ffd4c5', /* Change color to white */
                 textShadow: '0 0 3px rgb(77, 39, 39)' /* Add a subtle black outline */
             }}>
-                *＊✿❀✧❀✿＊*
+               
             </div>
 
             
