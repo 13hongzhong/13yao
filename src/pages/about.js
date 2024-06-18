@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Pagedoll from '@/components/Pagedoll';
 
 const about = () => {
     return (
@@ -85,13 +86,13 @@ const about = () => {
 
                             <div className="md:w-7/12 w-full px-3">
                                 <div className="bg-white rounded-xl p-3 h-full overflow-auto" style={{ maxHeight: '450px' }}>
-                                    <h4 className="text-uppercase text-gray-800 opacity-70 text-sm mb-2">
+                                    <h4 className="text-uppercase text-gray-800 opacity-70 text-2xl mb-2" style={{ color: '#dbb7ac' }}>
                                         <i className="fal fa-bookmark mr-1"></i>About
                                     </h4>
                                     <p className="mb-2">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet massa blandit, fermentum enim a, scelerisque velit. Integer interdum urna ac dui sollicitudin sollicitudin. In feugiat posuere nulla, eget lobortis ante. Aliquam magna libero, dictum sit amet scelerisque ac, scelerisque tincidunt magna. Nulla et consectetur diam. Aliquam ipsum mi, tristique sed vestibulum ac, aliquet eget magna. Mauris varius id magna vitae ullamcorper. In gravida libero consectetur, lobortis nisl sit amet, pellentesque ligula. Suspendisse tincidunt feugiat posuere. Duis dui erat, accumsan a aliquam eu, efficitur a tortor. Nunc molestie, leo in commodo aliquam, tellus augue tempor velit, non placerat ex sem non nisi.
                                     </p>
-                                    <h4 className="text-uppercase text-gray-800 opacity-70 text-sm mb-2">
+                                    <h4 className="text-uppercase text-gray-800 opacity-70 text-2xl mb-2" style={{ color: '#dbb7ac' }}>
                                         <i className="fal fa-bookmark mr-1"></i>Trivia
                                     </h4>
                                     <ul className="list-disc list-inside space-y-2">
@@ -114,6 +115,8 @@ const about = () => {
                     </p>
                 </div>
             </main>
+
+            
         </>
     );
 }

@@ -167,7 +167,7 @@ const Layout = () => {
                 *＊✿❀✧❀✿＊*
             </div>
 
-            <Pagedoll /> {/* Add the Pagedoll component */}
+            
         </>
     );
 };
