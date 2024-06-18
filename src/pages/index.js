@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import Image from 'next/image'
 
+
 export default function Home() {
   return (
     <>
