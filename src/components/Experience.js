@@ -43,11 +43,11 @@ const Experience = () => {
              
             <motion.div 
 
-            style={{scaleY: scrollYProgress}}
+            style={{scaleY: scrollYProgress,  backgroundColor: '#beebff'}}
             
-            className="absolute left-8 top-0 bottom-0 w-[4px] bg-blue-200" >
+           div className="absolute left-8 top-0 w-[4px] h-full bg-dark origin-top" />
 
-            </motion.div>
+            
 
 
                 
