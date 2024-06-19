@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 
 
 const About = () => {
@@ -95,6 +96,7 @@ const About = () => {
                         </p>
                     </div>
                     <Experience />
+                    <Education />
                 </div>
             </main>
 

@@ -3,7 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import { useRef } from 'react';
 import LiIcon from "./LiIcon";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ type, time, place, info}) => {
     
     const ref =useRef(null);
     
@@ -18,15 +18,12 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             transition={{duration:0.5, type:"spring"}}
             >
                 <h3 className='capitalize font-bold text-2xl' style={{ color: '#c88671' }}>
-                    {position}&nbsp;
-                    <a href={companyLink} target="_blank" className='capitalize' style={{ color: '#abd1e1' }}>
-                        @{company}
-                    </a>
+                    {type}
                 </h3>
                 <span className='capitalize font-medium text-dark/45'>
-                    {time} | {address}
+                    {time} | {place}
                 </span>
-                <p className='font-medium w-full text-dark/65'>{work}</p>
+                <p className='font-medium w-full text-dark/65'>{info}</p>
             </motion.div>
         </li>
     );
@@ -48,7 +45,7 @@ const Filler = ({ position, company, companyLink, time, address, work }) => {
 
 
 
-const Experience = () => {
+const Education = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -58,7 +55,7 @@ const Experience = () => {
     return (
         <div className="relative">
             <h2 className='font-bold text-8xl mt-32 w-full text-center' style={{ color: '#d8b0a4' }}>
-                Experience
+                Education
             </h2>
             <div ref={ref} className='w-[75%] mx-auto relative mt-12'>
                 <motion.div
@@ -72,31 +69,19 @@ const Experience = () => {
                 <div className='w-5/7 mx-auto'>
                     <ul className="w-full flex flex-col items-start">
                         <Details
-                            position='Customer Service'
-                            company='Papa Johns'
-                            companyLink='https://www.papajohns.com/'
-                            time='2016-2017'
-                            address='Frisco, TX'
-                            work='In my role, I operated pizza ovens and kitchen equipment, focusing on collaborating with fellow kitchen staff, ensuring customer satisfaction through clear interactions.'
+                            type='Bachelor of Science In Computer Science'
+                            time='2020-2024'
+                            place='University of Houston'
+                            info='Relevant courses include Data Structures and Algorithms, Database Systems, and Data Science'
                         />
-                        <Details
-                            position='Customer Service'
-                            company='Papa Johns'
-                            companyLink='https://www.papajohns.com/'
-                            time='2016-2017'
-                            address='Frisco, TX'
-                            work='In my role, I operated pizza ovens and kitchen equipment, focusing on collaborating with fellow kitchen staff, ensuring customer satisfaction through clear interactions.'
-                        />
-                        <Details
-                            position='Customer Service'
-                            company='Papa Johns'
-                            companyLink='https://www.papajohns.com/'
-                            time='2016-2017'
-                            address='Frisco, TX'
-                            work='In my role, I operated pizza ovens and kitchen equipment, focusing on collaborating with fellow kitchen staff, ensuring customer satisfaction through clear interactions.'
+                         <Details
+                            type='Bachelor of Science In Computer Science'
+                            time='2020-2024'
+                            place='University of Houston'
+                            info='Relevant courses include Data Structures and Algorithms, Database Systems, and Data Science'
                         />
                         <Filler
-                           position=''
+                           type=''
                         />
                     </ul>
                 </div>
@@ -105,4 +90,4 @@ const Experience = () => {
     );
 };
 
-export default Experience;
+export default Education;
