@@ -78,7 +78,7 @@ const Layout = () => {
                             margin-top: 20px;
                         }
                         .min-h\\-[30px] {
-                            min-height: 10px;
+                            min-height: 50px;
                         }
                         .text-[90px] {
                             font-size: 30px;

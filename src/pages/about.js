@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import Experience from '@/components/Experience';
+
 
 const About = () => {
     return (
@@ -36,7 +38,7 @@ const About = () => {
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Godot4</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Photoshop</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Clip Studio Paint</li>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span> Illustrator</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span> Live2D Cubism</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Premiere</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>After Effects</li>
                                 </ul>
@@ -92,8 +94,13 @@ const About = () => {
                             <i className="fal fa-quote-right fa-fw ml-1"></i>
                         </p>
                     </div>
+                    <Experience />
                 </div>
             </main>
+
+            
+
+            
         </>
     );
 }
