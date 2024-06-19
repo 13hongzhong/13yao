@@ -7,7 +7,7 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>About Page</title>
+                <title>About Me</title>
                 <meta name="description" content="any description" />
             </Head>
 
@@ -33,12 +33,12 @@ const About = () => {
                                 <ul className="list-disc list-inside text-center text-gray-400" style={{ listStyleType: 'none' }}>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Microsoft Office</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Excel/Word/Powerpoint</li>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Github</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Live2D Cubism</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Unity 2D/3D</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Godot4</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Photoshop</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Clip Studio Paint</li>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span> Live2D Cubism</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span> Illustrator</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Premiere</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>After Effects</li>
                                 </ul>
