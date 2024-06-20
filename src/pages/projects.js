@@ -8,9 +8,10 @@ const projects = () => {
     return (
         <>
             <Head>
-                <title>Kagu ✿ Projects</title>
+                <title>Kagu • Projects</title>
                 <meta name="description" content="any description"/>
             </Head>
+            
             <main className='w-full mb-16 flex flex-col items-center justify-center'>
                 <Background>
                     <Skeleton className='pt-4'> 

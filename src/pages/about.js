@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>Kagu ✿ About Me</title>
+                <title>Kagu • About</title>
                 <meta name="description" content="any description" />
             </Head>
 
