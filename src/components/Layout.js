@@ -44,7 +44,7 @@ const Layout = () => {
           <div className="h-full flex flex-col justify-between">
             <div
               style={{
-                backgroundImage: "url('https://f2.toyhou.se/file/f2-toyhou-se/images/17777845_Ja7J7dn53mMdWIX.png')",
+                backgroundImage: "url('/images/background/beige_paw.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '150px',
@@ -55,7 +55,7 @@ const Layout = () => {
             ></div>
             <div
               style={{
-                backgroundImage: "url('https://f2.toyhou.se/file/f2-toyhou-se/images/17787301_jsP3mNTAOubMBpC.png')",
+                backgroundImage: "url('/images/background/blue_paw.jpg')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '150px',
@@ -66,7 +66,7 @@ const Layout = () => {
             ></div>
             <div
               style={{
-                backgroundImage: "url('https://f2.toyhou.se/file/f2-toyhou-se/images/15630132_YmHZEO0ihSpSAHx.png')",
+                backgroundImage: "url('/images/background/pink_paw.jpg')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '150px',
