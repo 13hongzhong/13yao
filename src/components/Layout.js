@@ -1,175 +1,86 @@
 import React from 'react';
-import Link from 'next/link';
-import { LinkArrow } from '@/components/Icons';
-import Pagedoll from '@/components/Pagedoll'; // Import the new Pagedoll component
 
 const Layout = () => {
-    return (
-        <>
-            <style>
-                {`
-                    html, body {
-                        height: 100%;
-                        margin: 0;
-                        padding: 0;
-                    }
-                    .layout-container {
-                        height: 70vh; /* Slightly less than full viewport height */
-                        box-sizing: border-box;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        background-color: #FFFFFF;
-                        box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
-                    }
-                    .card-content {
-                        flex-grow: 1;
-                        overflow-y: auto;
-                    }
-                    .buttons {
-                        display: flex;
-                        flex-wrap: wrap;
-                        gap: 10px;
-                        margin-top: -8px;
-                        margin-right: 13px;
-                        justify-content: center;
-                    }
-                    .button {
-                        display: flex;
-                        align-items: center;
-                        background-color: #f7c3b3;
-                        color: #fff;
-                        padding: 10px 20px;
-                        border-radius: 5px;
-                        text-decoration: none;
-                        font-size: 16px;
-                        font-weight: 600;
-                        border: 2px solid transparent;
-                        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-                    }
-                    .button:hover {
-                        background-color: #fff;
-                        color: #ffcbcb;
-                        border-color: #eeafaf;
-                    }
-                    @media (max-width: 768px) {
-                        .layout-container {
-                            height: auto;
-                            margin-top: 0;
-                            border-width: 10px;
-                        }
-                        .layout-container::before {
-                            display: none;
-                        }
-                        .md\\:w-5\\/12, .md\\:w-7\\/12 {
-                            width: 100%;
-                        }
-                        .min-h\\-[400px] {
-                            min-height: 250px;
-                        }
-                        .flex-col {
-                            flex-direction: column;
-                        }
-                        .mx-auto {
-                            margin: 0 auto;
-                            padding: 0 10px;
-                        }
-                        .mt-[-70px] {
-                            margin-top: 20px;
-                        }
-                        .min-h\\-[30px] {
-                            min-height: 50px;
-                        }
-                        .text-[90px] {
-                            font-size: 30px;
-                        }
-                        .bg-cover {
-                            background-size: cover;
-                        }
-                        .buttons {
-                            gap: 5px;
-                            flex-wrap: nowrap;
-                            justify-content: center;
-                        }
-                        .button {
-                            font-size: 14px;
-                            padding: 8px 16px;
-                        }
-                    }
-                `}
-            </style>
-            <div className="layout-container mx-auto max-w-[1100px] relative overflow-hidden border-l-[15px] border-[#D7D7D7] border-r-[15px] border-[#D7D7D7] rounded-[30px] mt-[-70px]">
-                <div className="absolute inset-0 z-[-1] flex">
-                    <div className="w-1/3 flex bg-red overflow-hidden">
-                        <div className="flex items-center ml-[-100px]">
-                            <span className="fa-stack fa-2x text-[90px]">
-                            </span>
-                        </div>
-                    </div>
-                    <div className="flex-1 bg-[#D7D7D7]"></div>
-                </div>
-                <div className="mx-auto tracking-wide max-w-[900px] z-[2]">
-                    <div className="flex flex-col md:flex-row py-2 md:py-3 h-full">
-                        <div className="md:w-5/12 mb-1 md:mb-0 z-[3]">
-                            <div className="min-h-[400px] bg-cover bg-center bg-no-repeat"
-                                style={{ 
-                                    backgroundImage: 'url(/images/profile/photo1.png)', 
-                                    backgroundSize: '98%', /* Adjust the size here */
-                                    filter: '' }}
-                                >
-                            </div>
-                            <div className='buttons'> {/* Container for buttons */}
-                                <Link href="/dummy.pdf" target={"_blank"}
-                                    className="button"
-                                    download={true}
-                                >
-                                    Resume <LinkArrow className={"w-6 ml-1"} />
-                                </Link>
-                                <Link href="mailto:cuit980@gmail.com" target={"_blank"}
-                                    className="button"
-                                >Contact</Link>
-                            </div>
-                        </div>
-                        <div className="md:w-7/12 p-2 md:px-3 my-auto flex flex-col bg-[#D7D7D7]">
-                            <div className="text-center mt-1 mb-3 text-white relative z-[6]">
-                                <div className="text-uppercase mb-n1 font-serif font-black text-[90px] tracking-wider drop-shadow-lg">
-                                    <span className="bold" style={{ fontSize: '0.6em' }}>Kagu</span> <span style={{ fontSize: '0.4em' }}>&#10047;</span> <span style={{ fontSize: '0.6em' }}>白板</span>
-                                </div>
-                                <p className="text-uppercase font-mono italic text-[85%] tracking-wider">illustrator . writer . developer</p>
-                            </div>
-                            <div className="card-content p-2 text-justify bg-white text-[#8a8787] rounded-[8px]">
-                            <p><span className="text-uppercase italic text-[#d8b0a4] tracking-wider">Lorem ipsum dolor sit amet</span>, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta eros et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque.</p>
-<p>Etiam ac pulvinar diam. Maecenas placerat sed dui at egestas. Quisque dictum, turpis a mollis laoreet, sapien lorem faucibus tortor, sagittis iaculis ex odio sit amet neque.</p>
-
-                            </div>
-                            <div className="flex mt-1 mx-n1">
-                                <div className="p-1">
-                                    <div className="min-h-[30px] rounded-[8px] bg-cover bg-center bg-no-repeat"
-                                        style={{ backgroundImage: 'url()' }}>
-                                            
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className="container mx-auto my-5 p-3 rounded-lg border-2" style={{ borderColor: '#abd1e1', maxWidth: '1200px', backgroundColor: '#f3f4f6' }}>
+      <div className="flex flex-wrap">
+        <div className="w-full lg:w-5/12 mb-3">
+          {/* FOCAL IMAGE */}
+          <div
+            style={{
+              backgroundImage: "url('https://f2.toyhou.se/file/f2-toyhou-se/images/75108968_XHJnFGLblspesP0.png')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              borderRadius: '16px',
+              minHeight: '450px',
+            }}
+            className="rounded-lg h-full"
+          ></div>
+        </div>
+        <div className="w-full lg:w-5/12 px-3">
+          {/* TITLE BLOCK */}
+          <div className="relative py-3 mb-3 rounded-lg" style={{ backgroundColor: ' #c5e6f4' }}>
+            <div className="text-white text-center py-3">
+              <h1 className="text-3xl font-bold uppercase mb-1" style={{ letterSpacing: '2.5px' }}>
+                Kagu ✿ 白板
+              </h1>
+              <p className="text-sm" style={{ letterSpacing: '1px' }}>
+                illustrator • writer • developer
+              </p>
             </div>
-
-            <div style={{
-                position: 'absolute',
-                bottom: '-40px', /* Adjust as needed */
-                width: '100%',
-                textAlign: 'center',
-                fontSize: '20px', /* Adjust as needed */
-                color: '#ffd4c5', /* Change color to white */
-                textShadow: '0 0 3px rgb(77, 39, 39)' /* Add a subtle black outline */
-            }}>
-               
-            </div>
-
-            
-        </>
-    );
+          </div>
+          {/* ABOUT BLOCK */}
+          <div className="p-3 bg-gray-100 mb-3 rounded-lg overflow-auto" style={{ height: '270px', lineHeight: '1.4' }}>
+            <p>Write whatever you want here! this box will scroll when filled.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis eget risus eu fermentum. Sed leo mi, luctus vitae
+              porttitor et, viverra ut lacus. Mauris bibendum, risus in efficitur dignissim, sapien enim pulvinar dui, a gravida elit
+              lorem sit amet velit. Suspendisse et malesuada magna, mollis fringilla mauris. Cras sollicitudin eleifend tortor, et
+              congue nulla finibus a. Suspendisse ullamcorper suscipit nulla at mattis. Vivamus commodo, magna ac pulvinar iaculis,
+              lectus dui posuere elit, in finibus urna turpis eget arcu. Morbi auctor sapien non nulla vestibulum, eget malesuada leo
+              condimentum. Integer blandit augue neque.
+            </p>
+          </div>
+        </div>
+        <div className="w-full lg:w-2/12">
+          <div className="h-full flex flex-col justify-between">
+            {/* DECO IMAGES */}
+            <div
+              style={{
+                backgroundImage: "url('https://f2.toyhou.se/file/f2-toyhou-se/images/17777845_Ja7J7dn53mMdWIX.png')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                minHeight: '150px',
+                borderRadius: '16px',
+              }}
+              className="mb-3"
+            ></div>
+            <div
+              style={{
+                backgroundImage: "url('https://f2.toyhou.se/file/f2-toyhou-se/images/17787301_jsP3mNTAOubMBpC.png')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                minHeight: '150px',
+                borderRadius: '16px',
+              }}
+              className="mb-3"
+            ></div>
+            <div
+              style={{
+                backgroundImage: "url('https://f2.toyhou.se/file/f2-toyhou-se/images/15630132_YmHZEO0ihSpSAHx.png')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                minHeight: '150px',
+                borderRadius: '16px',
+              }}
+              className="mb-3"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Layout;
