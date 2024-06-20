@@ -12,9 +12,9 @@ const projects = () => {
                 <meta name="description" content="any description"/>
             </Head>
             
-            <main className='w-full mb-16 flex flex-col items-center justify-center'>
+            <main className='w-full flex flex-col items-center justify-center'>
                 <Background>
-                    <Skeleton className='pt-4'> 
+                <Skeleton className='pt-4'> 
                         <AnimatedText text="Project Showcase" className="text-6xl" style={{ color: '#d8b0a4' }} /> 
                     </Skeleton>
                 </Background>
