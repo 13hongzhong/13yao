@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import { LinkArrow } from './Icons';
 
 const Layout = () => {
   return (
@@ -38,7 +40,32 @@ const Layout = () => {
               lectus dui posuere elit, in finibus urna turpis eget arcu. Morbi auctor sapien non nulla vestibulum, eget malesuada leo
               condimentum. Integer blandit augue neque.
             </p>
+            
           </div>
+
+          <div className='flex justify-center mt-6'>
+  <div className='flex'>
+    <Link
+      href="/dummy.pdf"
+      target="_blank"
+      className="flex items-center bg-beige text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-beige border-2 border-solid border-transparent hover:border-pink"
+      download={true}
+    >
+      Resume <LinkArrow className="w-6 ml-1" />
+    </Link>
+    <Link
+      href="mailto:cuit980@gmail.com"
+      target="_blank"
+      className="ml-4 bg-beige text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-beige border-2 border-solid border-transparent hover:border-pink"
+    >
+      Contact
+    </Link>
+  </div>
+</div>
+
+
+
+            
         </div>
         <div className="w-full lg:w-2/12">
           <div className="h-full flex flex-col justify-between">

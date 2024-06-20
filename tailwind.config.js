@@ -19,6 +19,8 @@ module.exports = {
         red: "#D7D7D7",
         pink: "#E3C5BC",
         footer: "#EFCDC2",
+        beige: "#d8b0a4",
+        blue: "#b3d8ea",
       }
     },
   },
