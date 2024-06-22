@@ -11,14 +11,30 @@ const projects = () => {
                 <title>Kagu • Projects</title>
                 <meta name="description" content="any description"/>
             </Head>
-            
-            <main className='w-full flex flex-col items-center justify-center'>
-                <Background>
-                <Skeleton className='pt-4'> 
+            <Background>
+            <main className='w-full mb-16 flex flex-col items-center justify-center'>
+                
+                <Skeleton className='pt-16'> 
                         <AnimatedText text="Project Showcase" className="text-6xl" style={{ color: '#d8b0a4' }} /> 
+                    
+                    <div className='grid grid-cols-12 gap-24'>
+                            <div className='col-span-12'>
+                                Featured Project
+                            </div>
+                            <div className='col-span-6'>
+                                Project-1
+                            </div>
+                            <div className='col-span-6'>
+                                Project-2
+                            </div>
+
+                    </div>
+
+                    
                     </Skeleton>
-                </Background>
+                
             </main>
+            </Background>
         </>
     );
 };
