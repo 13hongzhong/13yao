@@ -44,8 +44,7 @@ const NavBar = () => {
                 <Logo style={{ color: '#FFFFFF' }} />
             </div>
 
-            {/* Red line below the navbar */}
-            <div className="w-full h-[2px] absolute bottom-0 left-0" style={{ backgroundColor: '#fff' }}></div> {/* Change this to your desired hex color */}
+            <div className="w-full h-[2px] absolute bottom-0 left-0" style={{ backgroundColor: '#fff' }}></div>
         </header>
     )
 }
