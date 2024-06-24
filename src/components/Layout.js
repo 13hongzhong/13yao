@@ -43,7 +43,7 @@ const Layout = () => {
             
           </div>
 
-          <div className='flex justify-center mt-6'>
+          <div className='flex justify-center lg:self-center md:mb-9 md:mt-9 sm:mt-6 sm:mb-6'>
   <div className='flex'>
     <Link
       href="/dummy.pdf"
