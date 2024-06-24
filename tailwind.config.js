@@ -21,6 +21,10 @@ module.exports = {
         footer: "#EFCDC2",
         beige: "#d8b0a4",
         blue: "#b3d8ea",
+        black: "#8a8b99",
+        darkbeige: "#c99585",
+        pressbeige: "#c38976",
+        darkpink: "#d7d7d7",
       }
     },
   },

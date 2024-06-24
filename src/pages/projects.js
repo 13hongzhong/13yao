@@ -5,7 +5,7 @@ import Skeleton from '@/components/Skeleton';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import Image from 'next/image';
-import { GithubIcon } from '@/components/Icons';
+import { AltGithubIcon } from '@/components/Icons';
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 
 
@@ -13,8 +13,8 @@ const Project = ({title, type, img, link, github}) => {
 
     return (
         <article className="w-full flex flex-col items-center justify-center rounded-2xl
-        border border-solid border-dark bg-light p-6 relative">
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
+        bg-light p-6 relative">
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-darkpink rounded-br-3xl shadow-md' />
             <Link href={link} target="_blank"
         className='w-full cursor-pointer overflow-hidden rounded-lg'
         >
@@ -22,15 +22,25 @@ const Project = ({title, type, img, link, github}) => {
         </Link>
 
         <div className='w-full flex flex-col items-start justify-between mt-4'>
-            <span className='text-primary font-medium text-xl'>{type}</span>
-            <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
-            <h2 className='my-2 w-full text-left text-3xl font-bold'>{title}</h2>
+            <span className='text-blue font-medium text-xl'>{type}</span>
+            <Link
+            href={link}
+            target="_blank"
+            className='relative inline-block group text-beige'
+>
+            <h2 className='my-2 w-full text-left text-3xl font-bold'>
+            {title}
+            </h2>
+            <span
+            className='absolute inset-x-0 bottom-0 h-0.5 bg-transparent transition-all duration-300 group-hover:bg-beige'
+            style={{ textDecorationColor: '#d8b0a4' }} 
+            ></span>
             </Link>
             <div className='w-full mt-2 flex items-center justify-between'>
             <Link href={link} target="_blank"
-            className='text-lg font-semibold underline'
+            className='text-lg font-semibold underline text-beige hover:text-darkbeige active:text-pressbeige'
             > Visit </Link> 
-            <Link href={github} target="_blank" className='w-8'> <GithubIcon /> </Link> 
+            <Link href={github} target="_blank" className='w-8'> <AltGithubIcon /> </Link> 
             
             </div>
         </div>
@@ -43,9 +53,9 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
     return(
         <article className='w-full flex items-center justify-between relative rounded-br-2xl
-        rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12'>
+        rounded-3xl  bg-light shadow-1xl p-12 '>
 
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-darkpink rounded-br-3xl shadow-md' />
 
         <Link href={link} target="_blank"
         className='w-1/2 cursor-pointer overflow-hidden rounded-lg'
@@ -54,15 +64,26 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
         </Link>
 
         <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
-            <span className='text-primary font-medium text-xl'>{type}</span>
-            <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
-            <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
+            <span className='text-blue font-medium text-xl'>{type}</span>
+            <Link
+            href={link}
+            target="_blank"
+            className='relative inline-block group text-beige'
+>
+            <h2 className='my-2 w-full text-left text-4xl font-bold'>
+            {title}
+            </h2>
+            <span
+            className='absolute inset-x-0 bottom-0 h-0.5 bg-transparent transition-all duration-300 group-hover:bg-beige'
+            style={{ textDecorationColor: '#d8b0a4' }} 
+            ></span>
             </Link>
-            <p className='my-2 font-medium text-dark'>{summary}</p>
+
+            <p className='my-2 font-medium text-black'>{summary}</p>
             <div className='mt-2 flex items-center'>
-            <Link href={github} target="_blank" className='w-10'> <GithubIcon /> </Link> 
+            <Link href={github} target="_blank" className='w-10'> <AltGithubIcon /> </Link> 
             <Link href={link} target="_blank"
-            className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'
+            className='ml-4 rounded-lg bg-beige text-light p-2 px-6 text-lg font-semibold  hover:bg-darkbeige active:bg-pressbeige'
             > Visit Project </Link> 
             </div>
         </div>
