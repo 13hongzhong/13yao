@@ -5,7 +5,7 @@ import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
     
-    const ref =useRef(null);
+    const ref = useRef(null);
     
     return (
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto'>
@@ -17,7 +17,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             whileInView={{y:0}}
             transition={{duration:0.5, type:"spring"}}
             >
-                <h3 className='capitalize font-bold text-2xl' style={{ color: '#c88671' }}>
+                <h3 className='capitalize font-bold text-2xl md:text-3xl' style={{ color: '#c88671' }}>
                     {position}&nbsp;
                     <a href={companyLink} target="_blank" className='capitalize' style={{ color: '#abd1e1' }}>
                         @{company}
@@ -36,7 +36,7 @@ const Filler = ({ position, company, companyLink, time, address, work }) => {
     return (
         <li className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto'>
             <div className='ml-12'>
-                <h3 className='capitalize font-bold text-2xl' style={{ color: '#c88671' }}>
+                <h3 className='capitalize font-bold text-2xl md:text-3xl' style={{ color: '#c88671' }}>
                     {position}&nbsp;
                     
                 </h3>
@@ -45,8 +45,6 @@ const Filler = ({ position, company, companyLink, time, address, work }) => {
         </li>
     );
 };
-
-
 
 const Experience = () => {
     const ref = useRef(null);
@@ -57,7 +55,7 @@ const Experience = () => {
 
     return (
         <div className="relative">
-            <h2 className='font-bold text-8xl mt-32 w-full text-center' style={{ color: '#d8b0a4' }}>
+            <h2 className='font-bold text-7xl md:text-7xl lg:text-8xl mt-32 w-full text-center' style={{ color: '#d8b0a4' }}>
                 Experience
             </h2>
             <div ref={ref} className='w-[75%] mx-auto relative mt-12'>
@@ -69,7 +67,7 @@ const Experience = () => {
                     }}
                     className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
                 />
-                <div className='w-5/7 mx-auto'>
+                <div className='w-full md:w-5/7 mx-auto'>
                     <ul className="w-full flex flex-col items-start">
                         <Details
                             position='Customer Service'

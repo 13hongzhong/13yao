@@ -3,9 +3,9 @@ import { motion, useScroll } from "framer-motion";
 import { useRef } from 'react';
 import LiIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info}) => {
+const Details = ({ type, time, place, info }) => {
     
-    const ref =useRef(null);
+    const ref = useRef(null);
     
     return (
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto'>
@@ -17,7 +17,7 @@ const Details = ({ type, time, place, info}) => {
             whileInView={{y:0}}
             transition={{duration:0.5, type:"spring"}}
             >
-                <h3 className='capitalize font-bold text-2xl' style={{ color: '#c88671' }}>
+                <h3 className='capitalize font-bold text-2xl md:text-3xl' style={{ color: '#c88671' }}>
                     {type}
                 </h3>
                 <span className='capitalize font-medium text-dark/45'>
@@ -33,7 +33,7 @@ const Filler = ({ position, company, companyLink, time, address, work }) => {
     return (
         <li className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto'>
             <div className='ml-12'>
-                <h3 className='capitalize font-bold text-2xl' style={{ color: '#c88671' }}>
+                <h3 className='capitalize font-bold text-2xl md:text-3xl' style={{ color: '#c88671' }}>
                     {position}&nbsp;
                     
                 </h3>
@@ -42,8 +42,6 @@ const Filler = ({ position, company, companyLink, time, address, work }) => {
         </li>
     );
 };
-
-
 
 const Education = () => {
     const ref = useRef(null);
@@ -54,7 +52,7 @@ const Education = () => {
 
     return (
         <div className="relative">
-            <h2 className='font-bold text-8xl mt-32 w-full text-center' style={{ color: '#d8b0a4' }}>
+            <h2 className='font-bold text-7xl md:text-7xl lg:text-8xl mt-32 w-full text-center mt-4' style={{ color: '#d8b0a4' }}>
                 Education
             </h2>
             <div ref={ref} className='w-[75%] mx-auto relative mt-12'>
@@ -66,7 +64,7 @@ const Education = () => {
                     }}
                     className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
                 />
-                <div className='w-5/7 mx-auto'>
+                <div className='w-full md:w-5/7 mx-auto'>
                     <ul className="w-full flex flex-col items-start">
                         <Details
                             type='Bachelor of Science In Computer Science'
@@ -74,14 +72,14 @@ const Education = () => {
                             place='University of Houston'
                             info='Relevant courses include Data Structures and Algorithms, Database Systems, and Data Science'
                         />
-                         <Details
+                        <Details
                             type='Bachelor of Science In Computer Science'
                             time='2020-2024'
                             place='University of Houston'
                             info='Relevant courses include Data Structures and Algorithms, Database Systems, and Data Science'
                         />
                         <Filler
-                           type=''
+                           position=''
                         />
                     </ul>
                 </div>
