@@ -5,6 +5,7 @@ import NavBar from '../components/Navbar'
 import Footer from '@/components/Footer'
 import { AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -21,6 +22,8 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/profile/flower.png" />
       </Head>
+      <TransitionEffect />
+
       <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
         <NavBar />
         <AnimatePresence mode="wait">
