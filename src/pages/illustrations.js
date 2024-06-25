@@ -3,15 +3,15 @@ import Head from 'next/head';
 import Background from '@/components/Background';
 
 const sections = [
-    {
-        title: 'Regular Style',
-        images: [
-            '/images/illustrations/13.png',
-            '/images/illustrations/14.png',
-            '/images/illustrations/15.jpg',
-            '/images/illustrations/16.png',
-        ]
-    },
+  {
+    title: 'Regular Style',
+    images: [
+      '/images/illustrations/13.png',
+      '/images/illustrations/14.png',
+      '/images/illustrations/15.jpg',
+      '/images/illustrations/16.png',
+    ]
+  },
   {
     title: 'Chibi',
     images: [
@@ -38,13 +38,28 @@ const sections = [
 
 const Illustrations = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(null);
 
-  const handleImageClick = (src) => {
+  const handleImageClick = (src, index) => {
     setSelectedImage(src);
+    setCurrentIndex(index);
   };
 
   const handleCloseModal = () => {
     setSelectedImage(null);
+    setCurrentIndex(null);
+  };
+
+  const handleNextImage = () => {
+    const newIndex = (currentIndex + 1) % sections.flatMap(section => section.images).length;
+    setSelectedImage(sections.flatMap(section => section.images)[newIndex]);
+    setCurrentIndex(newIndex);
+  };
+
+  const handlePrevImage = () => {
+    const newIndex = (currentIndex - 1 + sections.flatMap(section => section.images).length) % sections.flatMap(section => section.images).length;
+    setSelectedImage(sections.flatMap(section => section.images)[newIndex]);
+    setCurrentIndex(newIndex);
   };
 
   return (
@@ -65,7 +80,7 @@ const Illustrations = () => {
                     <div
                       key={index}
                       className="overflow-hidden rounded-lg shadow-lg cursor-pointer w-full h-90"
-                      onClick={() => handleImageClick(src)}
+                      onClick={() => handleImageClick(src, index)}
                     >
                       <img src={src} alt={`${section.title} ${index + 1}`} className="w-full h-full object-cover" />
                     </div>
@@ -76,15 +91,14 @@ const Illustrations = () => {
           </div>
 
           {selectedImage && (
-            <div
-              className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-              onClick={handleCloseModal}
-            >
+            <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+              <button className="absolute top-4 right-4 text-white text-3xl" onClick={handleCloseModal}>×</button>
+              <button className="absolute left-4 text-white text-3xl" onClick={handlePrevImage}>❮</button>
               <img src={selectedImage} alt="Selected" className="max-w-full max-h-full" />
+              <button className="absolute right-4 text-white text-3xl" onClick={handleNextImage}>❯</button>
             </div>
           )}
         </div>
-
       </Background>
     </>
   );
