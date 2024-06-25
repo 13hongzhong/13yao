@@ -15,8 +15,8 @@ module.exports = {
       colors: {
         dark: "#1b1b1b",
         light: "#f5f5f5",
-        primary: "#B63E96", // 240,86,199
-        primaryDark: "#58E6D9", // 80,230,217
+        primary: "#B63E96",
+        primaryDark: "#58E6D9", 
         red: "#D7D7D7",
         pink: "#E3C5BC",
         footer: "#EFCDC2",
@@ -26,6 +26,7 @@ module.exports = {
         darkbeige: "#c99585",
         pressbeige: "#c38976",
         darkpink: "#d7d7d7",
+        lightpink: "#ffd6c8",
       }
     },
   },
