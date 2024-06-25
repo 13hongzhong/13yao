@@ -1,14 +1,14 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { TwitterIcon, GithubIcon, LinkedInIcon } from './Icons';
 import Logo from '../components/Logo.js';
 import { motion } from 'framer-motion';
 
-const CustomLink = ({ href, title, className = '' }) => {
+const CustomLink = ({ href, title, className = '', onClick }) => {
   const router = useRouter();
   return (
-    <Link href={href} className={`${className} relative group`} style={{ color: '#FFFFFF' }}>
+    <Link href={href} className={`${className} relative group`} style={{ color: '#FFFFFF' }} onClick={onClick}>
       {title}
       <span
         className={`h-[1px] inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'
@@ -21,10 +21,22 @@ const CustomLink = ({ href, title, className = '' }) => {
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsOpen(false);
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative' style={{ backgroundColor: '#efcdc2' }}>
@@ -36,10 +48,10 @@ const NavBar = () => {
 
       <div className={`w-full lg:flex lg:items-center lg:justify-between ${isOpen ? 'hidden lg:flex' : 'hidden'}`}>
         <nav className="flex flex-col lg:flex-row lg:items-center">
-          <CustomLink href="/" title="&#10047; Home" className='lg:mr-4' />
-          <CustomLink href="/about" title="&#10047; About" className='lg:mx-4' />
-          <CustomLink href="/projects" title="&#10047; Projects" className='lg:mx-4' />
-          <CustomLink href="/illustrations" title="&#10047; Illustrations" className='lg:ml-4' />
+          <CustomLink href="/" title="&#10047; Home" className='lg:mr-4' onClick={handleClick} />
+          <CustomLink href="/about" title="&#10047; About" className='lg:mx-4' onClick={handleClick} />
+          <CustomLink href="/projects" title="&#10047; Projects" className='lg:mx-4' onClick={handleClick} />
+          <CustomLink href="/illustrations" title="&#10047; Illustrations" className='lg:ml-4' onClick={handleClick} />
         </nav>
 
         <nav className="flex items-center justify-center mt-4 lg:mt-0">
@@ -70,10 +82,10 @@ const NavBar = () => {
         </button>
 
         <nav className="flex flex-col items-center mt-20 space-y-6">
-          <CustomLink href="/" title="&#10047; Home" />
-          <CustomLink href="/about" title="&#10047; About" />
-          <CustomLink href="/projects" title="&#10047; Projects" />
-          <CustomLink href="/illustrations" title="&#10047; Illustrations" />
+          <CustomLink href="/" title="&#10047; Home" onClick={handleClick} />
+          <CustomLink href="/about" title="&#10047; About" onClick={handleClick} />
+          <CustomLink href="/projects" title="&#10047; Projects" onClick={handleClick} />
+          <CustomLink href="/illustrations" title="&#10047; Illustrations" onClick={handleClick} />
         </nav>
 
         <nav className="flex items-center justify-center mt-8">
