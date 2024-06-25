@@ -92,7 +92,7 @@ const Illustrations = () => {
 
           {selectedImage && (
             <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-              <button className="absolute top-4 right-4 text-white text-3xl" onClick={handleCloseModal}>×</button>
+              <button className="absolute top-4 right-4 text-white text-5xl p-2" onClick={handleCloseModal}>×</button>
               <button className="absolute left-4 text-white text-3xl" onClick={handlePrevImage}>❮</button>
               <img src={selectedImage} alt="Selected" className="max-w-full max-h-full" />
               <button className="absolute right-4 text-white text-3xl" onClick={handleNextImage}>❯</button>
