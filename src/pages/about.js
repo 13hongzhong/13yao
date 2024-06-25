@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
+import TransitionEffect from '@/components/TransitionEffect';
 
 
 const About = () => {
@@ -11,6 +12,8 @@ const About = () => {
                 <title>Kagu • About</title>
                 <meta name="description" content="any description" />
             </Head>
+
+            <TransitionEffect />
 
             <main className="flex items-center justify-center text-dark w-full min-h-screen" style={{ 
                 backgroundColor: '#f4f5f6',

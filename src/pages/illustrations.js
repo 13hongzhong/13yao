@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Background from '@/components/Background';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const sections = [
   {
@@ -68,6 +69,8 @@ const Illustrations = () => {
         <title>Kagu • Illustrations</title>
         <meta name="description" content="any description" />
       </Head>
+
+      <TransitionEffect />
 
       <Background>
         <div className="min-h-screen flex flex-col">

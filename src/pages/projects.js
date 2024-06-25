@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { AltGithubIcon } from '@/components/Icons';
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import TransitionEffect from '@/components/TransitionEffect';
 
 
 const Project = ({title, type, img, link, github}) => {
@@ -67,6 +68,9 @@ const projects = () => {
                 <title>Kagu • Projects</title>
                 <meta name="description" content="any description"/>
             </Head>
+
+            <TransitionEffect />
+
             <Background>
                 <main className='w-full mb-16 flex flex-col items-center justify-center'>
                     <Skeleton className='pt-16'> 
