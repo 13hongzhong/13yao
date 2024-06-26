@@ -53,7 +53,7 @@ const About = () => {
                             <div className="mb-3">
                                 <div className="rounded-xl p-3 text-white" style={{ backgroundColor: '#d7d7d7' }}> 
                                     <h1 className="text-4xl mb-0">
-                                        <i className="fal fa-crown fa-fw"></i> A Little Introduction
+                                        <i className="fal fa-crown fa-fw"></i> Qualifications
                                     </h1>
                                 </div>
                             </div>
