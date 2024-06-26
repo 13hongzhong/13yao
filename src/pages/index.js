@@ -16,12 +16,7 @@ export default function Home() {
       <TransitionEffect />
 
       <Layout>
-        <main className='flex items-center text-dark w-full min-h-screen' style={{ 
-          backgroundColor: '#f4f5f6',
-          backgroundImage: "url('/images/background/square.png')",
-          backgroundRepeat: 'repeat',
-          backgroundSize: '400px 400px'
-        }}>
+        <main className='flex items-center text-dark w-full min-h-screen'>
           <div className="flex items-center justify-between w-full">
            
           </div>
