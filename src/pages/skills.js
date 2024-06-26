@@ -9,7 +9,7 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>Kagu • About</title>
+                <title>Kagu • Skills</title>
                 <meta name="description" content="any description" />
             </Head>
 
@@ -35,16 +35,16 @@ const About = () => {
                                     <h2 className="text-2xl mb-2 font-bold" style={{ color: '#d8b0a4' }}>TOOLS</h2>
                                 </div>
                                 <ul className="list-disc list-inside text-center text-gray-400" style={{ listStyleType: 'none' }}>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Microsoft Office</li>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Excel/Word/Powerpoint</li>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Live2D Cubism</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Git/Github</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Unity 2D/3D</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Godot4</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span> AWS</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Jupyter Notebook</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Microsoft Office</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Excel/Word/Powerpoint</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Photoshop</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Clip Studio Paint</li>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span> Illustrator</li>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Premiere</li>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>After Effects</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Live2D Cubism</li>
                                 </ul>
                             </div>
                         </div>
@@ -71,13 +71,16 @@ const About = () => {
                                 <div className="md:w-7/12 w-full px-3">
                                     <div className="bg-white rounded-xl p-3 h-full overflow-auto" style={{ maxHeight: '450px' }}>
                                         <h4 className="text-uppercase text-gray-800 opacity-70 text-2xl mb-2" style={{ color: '#dbb7ac' }}>
-                                            <i className="fal fa-bookmark mr-1"></i>About
-                                        </h4>
-                                        <p className="mb-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet massa blandit, fermentum enim a, scelerisque velit. Integer interdum urna ac dui sollicitudin sollicitudin. In feugiat posuere nulla, eget lobortis ante. Aliquam magna libero, dictum sit amet scelerisque ac, scelerisque tincidunt magna. Nulla et consectetur diam. Aliquam ipsum mi, tristique sed vestibulum ac, aliquet eget magna. Mauris varius id magna vitae ullamcorper. In gravida libero consectetur, lobortis nisl sit amet, pellentesque ligula. Suspendisse tincidunt feugiat posuere.
-                                        </p>
-                                        <h4 className="text-uppercase text-gray-800 opacity-70 text-2xl mb-2" style={{ color: '#dbb7ac' }}>
                                             <i className="fal fa-bookmark mr-1"></i>Skills
+                                        </h4>
+                                        <ul className="list-disc list-inside space-y-2 mb-3">
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Suspendisse sit amet massa blandit, fermentum enim a, scelerisque velit.</li>
+                                            <li>Integer interdum urna ac dui sollicitudin sollicitudin.</li>
+                                            <li>Nulla et consectetur diam. Aliquam ipsum mi, tristique sed vestibulum ac, aliquet eget magna.</li>
+                                        </ul>
+                                        <h4 className="text-uppercase text-gray-800 opacity-70 text-2xl mb-2" style={{ color: '#dbb7ac' }}>
+                                            <i className="fal fa-bookmark mr-1"></i>Relevant Coursework
                                         </h4>
                                         <ul className="list-disc list-inside space-y-2">
                                             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
