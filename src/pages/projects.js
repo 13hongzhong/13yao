@@ -77,11 +77,11 @@ const projects = () => {
                         <div className='grid grid-cols-12 gap-6 md:gap-8 lg:gap-12'>
                             <div className='col-span-12'>
                                 <FeaturedProject 
-                                    title="Crypto Screener Application"
+                                    title="Solar Flare Intensity Data Visualization"
                                     img={project1}
-                                    summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                    local currency."
+                                    summary="The Helios project aims to develop a system for analyzing high-intensity solar flare events using RHESSI data
+                                     from 2004-2005. The study focused on estimating solar flare intensities, mapping flare hotspots, and examining temporal changes,
+                                      revealing trends like flare concentration around the solar equator and potential cyclic patterns. "
                                     link="/"
                                     github="/"
                                     type="Featured Project"
@@ -89,11 +89,11 @@ const projects = () => {
                             </div>
                             <div className='col-span-12 md:col-span-6'>
                                 <Project 
-                                    title="Crypto Screener Application"
+                                    title="Fine Arts Museum of Houston Database"
                                     img={project1}
                                     link="/"
-                                    github="/"
-                                    type="Featured Project"
+                                    github=""
+                                    type="Web Application"
                                 />
                             </div>
                             <div className='col-span-12 md:col-span-6'>
