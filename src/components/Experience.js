@@ -75,23 +75,23 @@ const Experience = () => {
                             companyLink='https://www.papajohns.com/'
                             time='2016-2017'
                             address='Frisco, TX'
-                            work='In my role, I operated pizza ovens and kitchen equipment, focusing on collaborating with fellow kitchen staff, ensuring customer satisfaction through clear interactions.'
+                            work='I operated pizza ovens and collaborated with coworkers to deliver pizza in a timely manner to customers.'
                         />
                         <Details
-                            position='Customer Service'
-                            company='Papa Johns'
-                            companyLink='https://www.papajohns.com/'
-                            time='2016-2017'
+                            position='Shift Lead'
+                            company='Jersey Mike’s Subs'
+                            companyLink='https://www.jerseymikes.com/'
+                            time='2017-2022'
                             address='Frisco, TX'
-                            work='In my role, I operated pizza ovens and kitchen equipment, focusing on collaborating with fellow kitchen staff, ensuring customer satisfaction through clear interactions.'
+                            work='I guided coworkers, provided customer service, and hold a Food Handling and Manager certificate. I made sandwiches!!!'
                         />
                         <Details
-                            position='Customer Service'
-                            company='Papa Johns'
-                            companyLink='https://www.papajohns.com/'
-                            time='2016-2017'
-                            address='Frisco, TX'
-                            work='In my role, I operated pizza ovens and kitchen equipment, focusing on collaborating with fellow kitchen staff, ensuring customer satisfaction through clear interactions.'
+                            position='Coding Mentor'
+                            company='UH IEEE'
+                            companyLink='https://ieeeuh.squarespace.com/'
+                            time='2021-2024'
+                            address='Houston, TX'
+                            work='I secured club sponsorships, hosted events like Chili Cook Off, assisted with budgeting, tutored students in programming, and created visual assets with Figma to advertise events.'
                         />
                         <Filler
                            position=''

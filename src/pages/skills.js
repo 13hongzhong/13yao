@@ -5,7 +5,7 @@ import Education from '@/components/Education';
 import TransitionEffect from '@/components/TransitionEffect';
 
 
-const About = () => {
+const Skills = () => {
     return (
         <>
             <Head>
@@ -44,7 +44,7 @@ const About = () => {
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Excel/Word/Powerpoint</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Photoshop</li>
                                     <li><span style={{ marginRight: '0.5rem' }}>◇</span>Clip Studio Paint</li>
-                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Live2D Cubism</li>
+                                    <li><span style={{ marginRight: '0.5rem' }}>◇</span>Figma</li>
                                 </ul>
                             </div>
                         </div>
@@ -71,22 +71,28 @@ const About = () => {
                                 <div className="md:w-7/12 w-full px-3">
                                     <div className="bg-white rounded-xl p-3 h-full overflow-auto" style={{ maxHeight: '450px' }}>
                                         <h4 className="text-uppercase text-gray-800 opacity-70 text-2xl mb-2" style={{ color: '#dbb7ac' }}>
-                                            <i className="fal fa-bookmark mr-1"></i>Skills
+                                        <i className="fal fa-bookmark mr-1"></i><b>Skills</b>
                                         </h4>
                                         <ul className="list-disc list-inside space-y-2 mb-3">
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                            <li>Suspendisse sit amet massa blandit, fermentum enim a, scelerisque velit.</li>
-                                            <li>Integer interdum urna ac dui sollicitudin sollicitudin.</li>
-                                            <li>Nulla et consectetur diam. Aliquam ipsum mi, tristique sed vestibulum ac, aliquet eget magna.</li>
+                                        <li><strong className="text-beige">Programming Languages:</strong> Python, C/C++, JavaScript, HTML/CSS, SQL, R, Golang</li>
+                                        <li><strong className="text-beige">Programming Frameworks:</strong> Node.js, Express.js, React.js, Tailwind, Bootstrap 5, Jest</li>
+                                        <li><strong className="text-beige">Languages:</strong> English (Fluent) and Mandarin Chinese (Native)</li>
                                         </ul>
                                         <h4 className="text-uppercase text-gray-800 opacity-70 text-2xl mb-2" style={{ color: '#dbb7ac' }}>
-                                            <i className="fal fa-bookmark mr-1"></i>Relevant Coursework
+                                            <i className="fal fa-bookmark mr-1"></i><b>Relevant Coursework</b>
                                         </h4>
                                         <ul className="list-disc list-inside space-y-2">
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                            <li>Suspendisse sit amet massa blandit, fermentum enim a, scelerisque velit.</li>
-                                            <li>Integer interdum urna ac dui sollicitudin sollicitudin.</li>
-                                            <li>Nulla et consectetur diam. Aliquam ipsum mi, tristique sed vestibulum ac, aliquet eget magna.</li>
+                                            <li>Computer Science and Programming</li>
+                                            <li>Computer Organization and Architecture</li>
+                                            <li>Algorithms and Data Structures</li>
+                                            <li>Data Science I</li>
+                                            <li>Database Systems</li>
+                                            <li>Software Design</li>
+                                            <li>Fundamentals of Operating Systems</li>
+                                            <li>Introduction to Game Development</li>
+                                            <li>Introduction to Game Art and Design</li>
+                                            <li>Introduction to Computer Networks</li>
+                                            <li>Introduction to Automata and Computability</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -113,4 +119,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default Skills;

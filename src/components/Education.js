@@ -70,13 +70,13 @@ const Education = () => {
                             type='Bachelor of Science In Computer Science'
                             time='2020-2024'
                             place='University of Houston'
-                            info='Relevant courses include Data Structures and Algorithms, Database Systems, and Data Science'
+                            info='Graduated Cum Laude 2024. Minored in Mathematics.'
                         />
                         <Details
-                            type='Bachelor of Science In Computer Science'
-                            time='2020-2024'
-                            place='University of Houston'
-                            info='Relevant courses include Data Structures and Algorithms, Database Systems, and Data Science'
+                            type='Online Coursework'
+                            time='2024-Present'
+                            place='FedVTE'
+                            info='Currently completing coursework on Cloud Computing Security and DNS Attacks!'
                         />
                         <Filler
                            position=''
