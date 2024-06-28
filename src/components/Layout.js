@@ -26,7 +26,7 @@ const Layout = () => {
             <div className="relative py-3 mb-3 rounded-lg" style={{ backgroundColor: ' #d7d7d7', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
               <div className="text-white text-center py-3">
                 <h1 className="text-3xl font-bold uppercase mb-1" style={{ letterSpacing: '2.5px' }}>
-                  Kagu ✿ 白板
+                  Tina ✿ 崔黛倩
                 </h1>
                 <p className="text-sm" style={{ letterSpacing: '1px' }}>
                   illustrator • writer • developer
@@ -35,12 +35,12 @@ const Layout = () => {
             </div>
             <div className="p-3 bg-gray-100 mb-3 rounded-lg overflow-auto" style={{ height: '270px', lineHeight: '1.4', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis eget risus eu fermentum. Sed leo mi, luctus vitae
-                porttitor et, viverra ut lacus. Mauris bibendum, risus in efficitur dignissim, sapien enim pulvinar dui, a gravida elit
-                lorem sit amet velit. Suspendisse et malesuada magna, mollis fringilla mauris. Cras sollicitudin eleifend tortor, et
-                congue nulla finibus a. Suspendisse ullamcorper suscipit nulla at mattis. Vivamus commodo, magna ac pulvinar iaculis,
-                lectus dui posuere elit, in finibus urna turpis eget arcu. Morbi auctor sapien non nulla vestibulum, eget malesuada leo
-                condimentum. Integer blandit augue neque.
+              Hi! I’m Tina, an artist and developer based in the US. I began programming in middle school through online forum games and 
+              have now graduated with a bachelor degree in Computer Science! I am currently learning how to draw in my freetime and brushing up 
+              on cybersecurity. I also enjoy creating games, designing websites, data science, and anything tech related! I’m open 
+              to learning about anything that catches my interest! Currently, I’m addicted to playing Dynasty Warrior 3, Ashes of the Kingdom
+              , and Baldur’s Gate 3. If you are ever interested in working with me, please sent me an email at cuit980@gmail !
+
               </p>
             </div>
 

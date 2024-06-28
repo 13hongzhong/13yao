@@ -80,59 +80,58 @@ const projects = () => {
                                     title="Solar Flare Intensity Data Visualization"
                                     img={project1}
                                     summary="The Helios project aims to develop a system for analyzing high-intensity solar flare events using RHESSI data
-                                     from 2004-2005. The study focused on estimating solar flare intensities, mapping flare hotspots, and examining temporal changes,
-                                      revealing trends like flare concentration around the solar equator and potential cyclic patterns. "
-                                    link="/"
-                                    github="/"
+                                     from 2004-2005. The study focused on estimating solar flare intensities and mapping flare hotspots to identify temporal changes
+                                    like flare concentration around the solar equator and potential cyclic patterns."
+                                    link="https://github.com/13hongzhong/Project-Helios"
+                                    github="https://github.com/13hongzhong/Project-Helios"
                                     type="Featured Project"
                                 />
                             </div>
                             <div className='col-span-12 md:col-span-6'>
                                 <Project 
-                                    title="Fine Arts Museum of Houston Database"
+                                    title="Fine Arts Museum Database"
                                     img={project1}
-                                    link="/"
-                                    github=""
+                                    link="https://github.com/ashishs1812/cosc3380fall23-team4"
+                                    github="https://github.com/ashishs1812/cosc3380fall23-team4"
                                     type="Web Application"
                                 />
                             </div>
                             <div className='col-span-12 md:col-span-6'>
                                 <Project 
-                                    title="Crypto Screener Application"
+                                    title="Fuel Delivery Cost Web Application"
                                     img={project1}
-                                    link="/"
-                                    github="/"
-                                    type="Featured Project"
+                                    link="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
+                                    github="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
+                                    type="Web Application"
                                 />
                             </div>
                             <div className='col-span-12'>
                                 <FeaturedProject 
-                                    title="Crypto Screener Application"
+                                    title="Let Meowt"
                                     img={project1}
-                                    summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                    local currency."
-                                    link="/"
-                                    github="/"
+                                    summary="An RPG horror game made in Godot 4 where the player must help a cat escape from the captivity of an evil grandma, 
+                                    rescue fellow feline companions, and uncover the truth behind grandma's house."
+                                    link="https://github.com/ghines1254/Game_Dev"
+                                    github="https://github.com/ghines1254/Game_Dev"
                                     type="Featured Project"
                                 />
                             </div>
                             <div className='col-span-12 md:col-span-6'>
                                 <Project 
-                                    title="Crypto Screener Application"
+                                    title="Juvenile Criminal Behavior"
                                     img={project1}
-                                    link="/"
-                                    github="/"
-                                    type="Featured Project"
+                                    link="https://github.com/13hongzhong/Juvenile-Criminal-Behavior"
+                                    github="https://github.com/13hongzhong/Juvenile-Criminal-Behavior"
+                                    type="Data Visualization"
                                 />
                             </div>
                             <div className='col-span-12 md:col-span-6'>
                                 <Project 
-                                    title="Crypto Screener Application"
+                                    title="Personal Portfolio Website"
                                     img={project1}
-                                    link="/"
-                                    github="/"
-                                    type="Featured Project"
+                                    link="https://github.com/13hongzhong/Portfolio-Website"
+                                    github="https://github.com/13hongzhong/Portfolio-Website"
+                                    type="Static Website"
                                 />
                             </div>
                         </div>
