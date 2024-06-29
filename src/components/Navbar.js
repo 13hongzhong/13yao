@@ -5,16 +5,16 @@ import { TwitterIcon, GithubIcon, LinkedInIcon } from './Icons';
 import Logo from '../components/Logo.js';
 import { motion } from 'framer-motion';
 
-const CustomLink = ({ href, as, title, className = '', onClick }) => {
+const CustomLink = ({ href, title, className = '', onClick }) => {
   const router = useRouter();
-  const formattedHref = href === '/' ? '/13yao/' : href;
-  const displayHref = as || formattedHref;
+  const isHomepage = href === '/';
+  const formattedHref = isHomepage ? `${href}/` : href;
 
   return (
-    <Link href={formattedHref} as={displayHref} className={`${className} relative group`} style={{ color: '#FFFFFF' }} onClick={onClick}>
+    <Link href={formattedHref} className={`${className} relative group`} style={{ color: '#FFFFFF' }} onClick={onClick}>
       {title}
       <span
-        className={`h-[1px] inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === displayHref ? 'w-full' : 'w-0'}`}
+        className={`h-[1px] inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === formattedHref ? 'w-full' : 'w-0'}`}
         style={{ backgroundColor: '#fff' }}
       >&nbsp;</span>
     </Link>
@@ -34,16 +34,11 @@ const NavBar = () => {
       setIsOpen(false);
     };
 
-    // Check if we are on the homepage without a trailing slash
-    if (router.pathname === '/' && router.asPath === '/13yao') {
-      router.replace('/13yao/');
-    }
-
     router.events.on('routeChangeComplete', handleRouteChange);
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
-  }, [router]);
+  }, [router.events]);
 
   return (
     <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative' style={{ backgroundColor: '#efcdc2' }}>
@@ -55,7 +50,7 @@ const NavBar = () => {
 
       <div className={`w-full lg:flex lg:items-center lg:justify-between ${isOpen ? 'hidden lg:flex' : 'hidden'}`}>
         <nav className="flex flex-col lg:flex-row lg:items-center">
-          <CustomLink href="/" as="/13yao/" title="&#10047; Home" className='lg:mr-4' onClick={handleClick} />
+          <CustomLink href="/" title="&#10047; Home" className='lg:mr-4' onClick={handleClick} />
           <CustomLink href="/skills" title="&#10047; Skills" className='lg:mx-4' onClick={handleClick} />
           <CustomLink href="/projects" title="&#10047; Projects" className='lg:mx-4' onClick={handleClick} />
           <CustomLink href="/illustrations" title="&#10047; Illustrations" className='lg:ml-4' onClick={handleClick} />
@@ -89,7 +84,7 @@ const NavBar = () => {
         </button>
 
         <nav className="flex flex-col items-center mt-20 space-y-6">
-          <CustomLink href="/" as="/13yao/" title="&#10047; Home" onClick={handleClick} />
+          <CustomLink href="/" title="&#10047; Home" onClick={handleClick} />
           <CustomLink href="/skills" title="&#10047; Skills" onClick={handleClick} />
           <CustomLink href="/projects" title="&#10047; Projects" onClick={handleClick} />
           <CustomLink href="/illustrations" title="&#10047; Illustrations" onClick={handleClick} />
