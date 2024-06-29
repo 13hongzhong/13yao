@@ -47,7 +47,7 @@ const Layout = () => {
             <div className='flex justify-center lg:self-center md:mb-9 md:mt-9 sm:mt-6 sm:mb-6 mb-4'>
               <div className='flex'>
                 <Link
-                  href="/13yao/Tina_Cui_Resume_6_27_24.pdf"
+                  href="/Tina_Cui_Resume_6_27_24.pdf"
                   target="_blank"
                   className="flex items-center bg-beige text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-beige border-2 border-solid border-transparent hover:border-pink"
                   download={true}
