@@ -11,7 +11,7 @@ const CustomLink = ({ href, title, className = '', onClick }) => {
 
   // Determine if it's the homepage link
   const isHomepage = href === '/';
-  
+
   // Ensure correct formatting of href based on basePath and whether it's the homepage
   const formattedHref = isHomepage ? `${basePath}/` : `${basePath}${href}`;
 
