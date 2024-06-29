@@ -4,22 +4,19 @@ import { useRef } from 'react';
 import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
-    
     const ref = useRef(null);
     
     return (
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto'>
-           
-           <LiIcon reference={ref} />
-           
+            <LiIcon reference={ref} />
             <motion.div className='ml-12'
-            initial={{y:50}}
-            whileInView={{y:0}}
-            transition={{duration:0.5, type:"spring"}}
+                initial={{ y: 50 }}
+                whileInView={{ y: 0 }}
+                transition={{ duration: 0.5, type: "spring" }}
             >
                 <h3 className='capitalize font-bold text-2xl md:text-3xl' style={{ color: '#c88671' }}>
                     {position}&nbsp;
-                    <a href={companyLink} target="_blank" className='capitalize' style={{ color: '#abd1e1' }}>
+                    <a href={companyLink} target="_blank" rel="noopener noreferrer" className='capitalize' style={{ color: '#abd1e1' }}>
                         @{company}
                     </a>
                 </h3>
@@ -38,7 +35,6 @@ const Filler = ({ position, company, companyLink, time, address, work }) => {
             <div className='ml-12'>
                 <h3 className='capitalize font-bold text-2xl md:text-3xl' style={{ color: '#c88671' }}>
                     {position}&nbsp;
-                    
                 </h3>
                 <p className='font-medium w-full text-dark/65'>{work}</p>
             </div>
@@ -55,7 +51,7 @@ const Experience = () => {
 
     return (
         <div className="relative">
-            <h2 className='font-bold text-7xl md:text-6xl lg:text-8xl mt-32 w-full text-center' style={{ color: '#d8b0a4' }}>
+            <h2 className='font-bold text-5xl md:text-6xl lg:text-7xl mt-16 md:mt-24 lg:mt-32 w-full text-center mt-4' style={{ color: '#d8b0a4' }}>
                 Experience
             </h2>
             <div ref={ref} className='w-[75%] mx-auto relative mt-12'>
@@ -94,7 +90,7 @@ const Experience = () => {
                             work='I secured club sponsorships, hosted events like Chili Cook Off, assisted with budgeting, tutored students in programming, and created visual assets with Figma to advertise events.'
                         />
                         <Filler
-                           position=''
+                            position=''
                         />
                     </ul>
                 </div>
