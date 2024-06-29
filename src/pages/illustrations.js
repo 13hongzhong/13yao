@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Background from '@/components/Background';
 import TransitionEffect from '@/components/TransitionEffect';
 
@@ -86,14 +85,7 @@ const Illustrations = () => {
                       className="overflow-hidden rounded-lg shadow-lg cursor-pointer w-full h-90"
                       onClick={() => handleImageClick(src, index)}
                     >
-                      <Image 
-                        src={src} 
-                        alt={`${section.title} ${index + 1}`} 
-                        className="w-full h-full object-cover" 
-                        layout="responsive"
-                        width={100}
-                        height={100}
-                      />
+                      <img src={src} alt={`${section.title} ${index + 1}`} className="w-full h-full object-cover" />
                     </div>
                   ))}
                 </div>
@@ -105,14 +97,7 @@ const Illustrations = () => {
             <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
               <button className="absolute top-4 right-4 text-white text-5xl p-2" onClick={handleCloseModal}>×</button>
               <button className="absolute left-4 text-white text-3xl" onClick={handlePrevImage}>❮</button>
-              <Image 
-                src={selectedImage} 
-                alt="Selected" 
-                className="max-w-full max-h-full" 
-                layout="intrinsic"
-                width={800}
-                height={800}
-              />
+              <img src={selectedImage} alt="Selected" className="max-w-full max-h-full" />
               <button className="absolute right-4 text-white text-3xl" onClick={handleNextImage}>❯</button>
             </div>
           )}

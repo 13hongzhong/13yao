@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import square from "../../public/images/background/square.png";
 
 const Background = ({ children }) => (
     <>
