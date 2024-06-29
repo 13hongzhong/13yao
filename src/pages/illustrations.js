@@ -33,10 +33,6 @@ const sections = [
       'images/illustrations/10.gif',
       'images/illustrations/11.gif',
       'images/illustrations/12.gif',
-      'images/illustrations/17.png',
-      'images/illustrations/18.png',
-      'images/illustrations/19.png',
-      'images/illustrations/20.png',
 
     ]
   },
