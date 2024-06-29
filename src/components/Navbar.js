@@ -9,7 +9,7 @@ const CustomLink = ({ href, title, className = '', onClick }) => {
   const router = useRouter();
   const isHomepage = href === '/';
   // Ensure formattedHref is correctly handled to avoid invalid paths
-  const formattedHref = isHomepage ? '/' : `${href}/`; // Ensure trailing slash for non-root links
+  const formattedHref = isHomepage ? '/' : href;
 
   return (
     <Link href={formattedHref}>
