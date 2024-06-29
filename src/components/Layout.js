@@ -11,7 +11,7 @@ const Layout = () => {
           <div className="w-full lg:w-5/12 mb-3">
             <div
               style={{
-                backgroundImage: "url('public/images/profile/photo1.png')",
+                backgroundImage: "url('/images/profile/photo1.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -67,7 +67,7 @@ const Layout = () => {
             <div className="h-full flex flex-col justify-between">
               <div
                 style={{
-                  backgroundImage: "url('public/images/background/beige_paw.png')",
+                  backgroundImage: "url('/images/background/beige_paw.png')",
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   minHeight: '150px',
