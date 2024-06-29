@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  base: '/13yao'
+  base: '/'
 }
 
 module.exports = nextConfig
