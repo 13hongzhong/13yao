@@ -21,7 +21,7 @@ export default function Home() {
             <div className="flex flex-wrap">
               <div className="w-full lg:w-5/12 mb-3">
                 <div className="rounded-lg h-full relative overflow-hidden" style={{ minHeight: '450px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
-                  <Image src="/images/profile/photo1.png" alt="Profile photo" layout="fill" objectFit="cover" />
+                  <Image src="images/profile/photo1.png" alt="Profile photo" layout="fill" objectFit="cover" />
                 </div>
               </div>
               <div className="w-full lg:w-5/12 px-3">
@@ -68,13 +68,13 @@ export default function Home() {
               <div className="w-full lg:w-2/12">
                 <div className="h-full flex flex-col justify-between">
                   <div className="mb-3 relative overflow-hidden" style={{ minHeight: '150px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
-                    <Image src="/images/background/beige_paw.png" alt="Beige paw" layout="fill" objectFit="cover" />
+                    <Image src="images/background/beige_paw.png" alt="Beige paw" layout="fill" objectFit="cover" />
                   </div>
                   <div className="mb-3 relative overflow-hidden" style={{ minHeight: '150px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
-                    <Image src="/images/background/blue_paw.jpg" alt="Blue paw" layout="fill" objectFit="cover" />
+                    <Image src="images/background/blue_paw.jpg" alt="Blue paw" layout="fill" objectFit="cover" />
                   </div>
                   <div className="mb-3 relative overflow-hidden" style={{ minHeight: '150px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
-                    <Image src="/images/background/pink_paw.jpg" alt="Pink paw" layout="fill" objectFit="cover" />
+                    <Image src="images/background/pink_paw.jpg" alt="Pink paw" layout="fill" objectFit="cover" />
                   </div>
                 </div>
               </div>
