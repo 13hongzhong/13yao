@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
 import Image from 'next/image';
 import TransitionEffect from '@/components/TransitionEffect';
+import Background from '@/components/Background';
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
 
       <TransitionEffect />
 
+    <Background>
+
       <Layout>
         <main className='flex items-center text-dark w-full min-h-screen'>
           <div className="flex items-center justify-between w-full">
@@ -22,6 +25,8 @@ export default function Home() {
           </div>
         </main>
       </Layout>
+
+      </Background>
     </>
   );
 }
