@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const CustomLink = ({ href, title, className = '', onClick }) => {
   const router = useRouter();
-  const basePath = '/13yao'; // Ensure this matches your next.config.js basePath
+  const basePath = '/13yao'; // Set your base path here
 
   // Determine if it's the homepage link
   const isHomepage = href === '/';
