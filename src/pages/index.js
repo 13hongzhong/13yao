@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 
-// You may need to import your CSS or any additional components here
-import { LinkArrow } from './Icons'; // Adjust the import path as needed
-import TransitionEffect from './TransitionEffect'; // Adjust the import path as needed
-import Background from './Background'; // Adjust the import path as needed
+// Adjust the import paths as needed
+import { LinkArrow } from '../components/Icons'; 
+import TransitionEffect from '../components/TransitionEffect'; 
+import Background from '../components/Background'; 
 
 const Home = () => {
   return (
@@ -22,18 +22,15 @@ const Home = () => {
         <div className="container mx-auto my-5 p-3 rounded-lg shadow-lg" style={{ maxWidth: '1200px', backgroundColor: '#f3f4f6' }}>
           <div className="flex flex-wrap">
             <div className="w-full lg:w-5/12 mb-3">
-              <div
-                style={{
-                  backgroundImage: "url('/images/profile/photo1.png')",
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  borderRadius: '16px',
-                  minHeight: '450px',
-                  boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
-                }}
-                className="rounded-lg h-full"
-              ></div>
+              <div className="rounded-lg h-full">
+                <Image 
+                  src="images/profile/photo1.png" 
+                  alt="Profile Photo" 
+                  layout="fill" 
+                  objectFit="cover" 
+                  className="rounded-lg"
+                />
+              </div>
             </div>
             <div className="w-full lg:w-5/12 px-3">
               <div className="relative py-3 mb-3 rounded-lg" style={{ backgroundColor: ' #d7d7d7', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
@@ -78,39 +75,33 @@ const Home = () => {
             </div>
             <div className="w-full lg:w-2/12">
               <div className="h-full flex flex-col justify-between">
-                <div
-                  style={{
-                    backgroundImage: "url('/images/background/beige_paw.png')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    minHeight: '150px',
-                    borderRadius: '16px',
-                    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
-                  }}
-                  className="mb-3"
-                ></div>
-                <div
-                  style={{
-                    backgroundImage: "url('/images/background/blue_paw.jpg')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    minHeight: '150px',
-                    borderRadius: '16px',
-                    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
-                  }}
-                  className="mb-3"
-                ></div>
-                <div
-                  style={{
-                    backgroundImage: "url('/images/background/pink_paw.jpg')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    minHeight: '150px',
-                    borderRadius: '16px',
-                    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
-                  }}
-                  className="mb-3"
-                ></div>
+                <div className="mb-3">
+                  <Image 
+                    src="images/background/beige_paw.png" 
+                    alt="Beige Paw" 
+                    layout="fill" 
+                    objectFit="cover" 
+                    className="rounded-lg"
+                  />
+                </div>
+                <div className="mb-3">
+                  <Image 
+                    src="images/background/blue_paw.jpg" 
+                    alt="Blue Paw" 
+                    layout="fill" 
+                    objectFit="cover" 
+                    className="rounded-lg"
+                  />
+                </div>
+                <div className="mb-3">
+                  <Image 
+                    src="images/background/pink_paw.jpg" 
+                    alt="Pink Paw" 
+                    layout="fill" 
+                    objectFit="cover" 
+                    className="rounded-lg"
+                  />
+                </div>
               </div>
             </div>
           </div>

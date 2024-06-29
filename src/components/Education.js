@@ -52,7 +52,7 @@ const Education = () => {
 
     return (
         <div className="relative">
-            <h2 className='font-bold text-7xl md:text-7xl lg:text-8xl mt-32 w-full text-center mt-4' style={{ color: '#d8b0a4' }}>
+            <h2 className='font-bold text-7xl md:text-6xl lg:text-8xl mt-32 w-full text-center mt-4' style={{ color: '#d8b0a4' }}>
                 Education
             </h2>
             <div ref={ref} className='w-[75%] mx-auto relative mt-12'>
