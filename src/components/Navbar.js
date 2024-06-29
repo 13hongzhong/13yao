@@ -7,12 +7,14 @@ import { motion } from 'framer-motion';
 
 const CustomLink = ({ href, title, className = '', onClick }) => {
   const router = useRouter();
+  const isHomepage = href === '/';
+  const formattedHref = isHomepage ? `${href}/` : href;
+
   return (
-    <Link href={href} className={`${className} relative group`} style={{ color: '#FFFFFF' }} onClick={onClick}>
+    <Link href={formattedHref} className={`${className} relative group`} style={{ color: '#FFFFFF' }} onClick={onClick}>
       {title}
       <span
-        className={`h-[1px] inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'
-          }`}
+        className={`h-[1px] inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === formattedHref ? 'w-full' : 'w-0'}`}
         style={{ backgroundColor: '#fff' }}
       >&nbsp;</span>
     </Link>
@@ -48,7 +50,7 @@ const NavBar = () => {
 
       <div className={`w-full lg:flex lg:items-center lg:justify-between ${isOpen ? 'hidden lg:flex' : 'hidden'}`}>
         <nav className="flex flex-col lg:flex-row lg:items-center">
-          <CustomLink href="https://13hongzhong.github.io/13yao/" title="&#10047; Home" className='lg:mr-4' onClick={handleClick} />
+          <CustomLink href="/" title="&#10047; Home" className='lg:mr-4' onClick={handleClick} />
           <CustomLink href="/skills" title="&#10047; Skills" className='lg:mx-4' onClick={handleClick} />
           <CustomLink href="/projects" title="&#10047; Projects" className='lg:mx-4' onClick={handleClick} />
           <CustomLink href="/illustrations" title="&#10047; Illustrations" className='lg:ml-4' onClick={handleClick} />
@@ -64,7 +66,6 @@ const NavBar = () => {
           {/* <motion.a href="https://linkedin.com" target="_blank" className="w-6 ml-3" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
           <LinkedInIcon style={{ fill: '#FFFFFF' }} />
           </motion.a> */}
-
         </nav>
       </div>
 
@@ -83,7 +84,7 @@ const NavBar = () => {
         </button>
 
         <nav className="flex flex-col items-center mt-20 space-y-6">
-          <a href="https://13hongzhong.github.io/13yao/" title="&#10047; Home" onClick={handleClick} />
+          <CustomLink href="/" title="&#10047; Home" onClick={handleClick} />
           <CustomLink href="/skills" title="&#10047; Skills" onClick={handleClick} />
           <CustomLink href="/projects" title="&#10047; Projects" onClick={handleClick} />
           <CustomLink href="/illustrations" title="&#10047; Illustrations" onClick={handleClick} />
