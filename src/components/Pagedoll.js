@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Pagedoll = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -23,7 +24,12 @@ const Pagedoll = () => {
                     <i className="fas fa-comment fa-flip-horizontal fa-fade fa-5x animate-pulse text-gray-500"></i>
                     <div className="absolute top-0 left-0 w-full h-full z-[10]"></div>
                 </div>
-                <img src="/images/profile/doll.gif" alt="Pagedoll Character" />
+                <Image 
+                    src="/images/profile/doll.gif" 
+                    alt="Pagedoll Character" 
+                    width={150} // Adjust the width according to your needs
+                    height={150} // Adjust the height according to your needs
+                />
                 <audio id="pagedoll-audio" loop>
                     <source src="/images/profile/music.mp3" type="audio/mpeg" />
                 </audio>

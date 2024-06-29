@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import TransitionEffect from '@/components/TransitionEffect';
@@ -25,11 +26,13 @@ const Skills = () => {
                     <div className="flex flex-wrap -mx-3">
                         <div className="lg:w-3/12 w-full lg:order-2 order-1 mb-3 px-3">
                             <div className="bg-white rounded-xl p-3">
-                                <img
+                                <Image
                                     src="/images/profile/baiban2.png"
                                     className="block p-2 mx-auto mb-3 rounded-full"
                                     style={{ maxHeight: '210px', maxWidth: '210px', background: '#d4e7ef' }}  
                                     alt="Avatar"
+                                    width={210}
+                                    height={210}
                                 />
                                 <div className="text-center mb-3">
                                     <h2 className="text-2xl mb-2 font-bold" style={{ color: '#d8b0a4' }}>TOOLS</h2>
@@ -103,7 +106,7 @@ const Skills = () => {
                     <div className="rounded-xl p-3 text-white text-center mt-3" style={{ backgroundColor: '#d7d7d7' }}>  
                         <p className="tracking-wide">
                             <i className="fal fa-quote-left fa-fw mr-1"></i>
-                            <i>"Fear is a reason to move forward."</i>
+                            <i>&quot;Fear is a reason to move forward.&quot;</i>
                             <i className="fal fa-quote-right fa-fw ml-1"></i>
                         </p>
                     </div>
@@ -111,10 +114,6 @@ const Skills = () => {
                     <Education />
                 </div>
             </main>
-
-            
-
-            
         </>
     );
 }
