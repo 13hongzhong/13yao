@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
 import Image from 'next/image';
 import TransitionEffect from '@/components/TransitionEffect';
-import Background from '@/components/Background';
+import square from "../../public/images/background/square.png";
 
 export default function Home() {
   return (
@@ -16,17 +16,17 @@ export default function Home() {
 
       <TransitionEffect />
 
-    <Background>
-
       <Layout>
-        <main className='flex items-center text-dark w-full min-h-screen'>
+        <main className='flex items-center justify-center text-dark w-full min-h-screen' style={{ 
+            backgroundColor: '#f4f5f6',
+            backgroundImage: `url(${square})`,
+            backgroundRepeat: 'repeat',
+            backgroundSize: '400px 400px'
+        }}>
           <div className="flex items-center justify-between w-full">
-           
           </div>
         </main>
       </Layout>
-
-      </Background>
     </>
   );
 }
