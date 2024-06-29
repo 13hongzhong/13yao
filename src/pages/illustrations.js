@@ -7,32 +7,32 @@ const sections = [
   {
     title: 'Regular Style',
     images: [
-      '/images/illustrations/13.png',
-      '/images/illustrations/14.png',
-      '/images/illustrations/15.jpg',
-      '/images/illustrations/16.png',
+      'images/illustrations/13.png',
+      'images/illustrations/14.png',
+      'images/illustrations/15.jpg',
+      'images/illustrations/16.png',
     ]
   },
   {
     title: 'Chibi',
     images: [
-      '/images/illustrations/1.png',
-      '/images/illustrations/2.png',
-      '/images/illustrations/3.png',
-      '/images/illustrations/4.png',
-      '/images/illustrations/5.png',
-      '/images/illustrations/6.png',
+      'images/illustrations/1.png',
+      'images/illustrations/2.png',
+      'images/illustrations/3.png',
+      'images/illustrations/4.png',
+      'images/illustrations/5.png',
+      'images/illustrations/6.png',
       '/images/illustrations/7.png',
-      '/images/illustrations/8.png',
+      'images/illustrations/8.png',
     ]
   },
   {
     title: 'Pixel Art',
     images: [
-      '/images/illustrations/9.gif',
-      '/images/illustrations/10.gif',
-      '/images/illustrations/11.gif',
-      '/images/illustrations/12.gif',
+      'images/illustrations/9.gif',
+      'images/illustrations/10.gif',
+      'images/illustrations/11.gif',
+      'images/illustrations/12.gif',
     ]
   },
 ];
