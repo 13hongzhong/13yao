@@ -48,7 +48,7 @@ const NavBar = () => {
 
       <div className={`w-full lg:flex lg:items-center lg:justify-between ${isOpen ? 'hidden lg:flex' : 'hidden'}`}>
         <nav className="flex flex-col lg:flex-row lg:items-center">
-          <CustomLink href="/13yao/" title="&#10047; Home" className='lg:mr-4' onClick={handleClick} />
+          <CustomLink href="/" title="&#10047; Home" className='lg:mr-4' onClick={handleClick} />
           <CustomLink href="/skills" title="&#10047; Skills" className='lg:mx-4' onClick={handleClick} />
           <CustomLink href="/projects" title="&#10047; Projects" className='lg:mx-4' onClick={handleClick} />
           <CustomLink href="/illustrations" title="&#10047; Illustrations" className='lg:ml-4' onClick={handleClick} />
@@ -83,7 +83,7 @@ const NavBar = () => {
         </button>
 
         <nav className="flex flex-col items-center mt-20 space-y-6">
-          <CustomLink href="/13yao/" title="&#10047; Home" onClick={handleClick} />
+          <CustomLink href="/13yao" title="&#10047; Home" onClick={handleClick} />
           <CustomLink href="/skills" title="&#10047; Skills" onClick={handleClick} />
           <CustomLink href="/projects" title="&#10047; Projects" onClick={handleClick} />
           <CustomLink href="/illustrations" title="&#10047; Illustrations" onClick={handleClick} />
