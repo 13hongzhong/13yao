@@ -14,7 +14,6 @@ import project5 from "../../public/images/projects/juv.png";
 import project6 from "../../public/images/projects/portfolio.png";
 import TransitionEffect from '@/components/TransitionEffect';
 
-
 const Project = ({title, type, img, link, github}) => {
     return (
         <article className="w-full flex flex-col items-center justify-center rounded-2xl bg-light p-6 relative lg:flex-row lg:p-8">
@@ -77,11 +76,17 @@ const projects = () => {
             <TransitionEffect />
 
             <Background>
-                <main className='w-full mb-16 flex flex-col items-center justify-center'>
+                <main className='w-full mb-16 flex flex-col items-center justify-center'
+                      style={{ 
+                        backgroundColor: '#f4f5f6',
+                        backgroundImage: "url('images/background/square.png')",
+                        backgroundRepeat: 'repeat',
+                        backgroundSize: '400px 400px'
+                      }}>
                     <Skeleton className='pt-16'> 
                         <div className='grid grid-cols-12 gap-6 md:gap-8 lg:gap-12'>
                             <div className='col-span-12'>
-                            <FeaturedProject 
+                                <FeaturedProject 
                                     title="Let Meowt"
                                     img={project1}
                                     summary="An RPG horror game made in Godot 4 where the player must help a cat escape from the captivity of an evil grandma, 
@@ -110,7 +115,7 @@ const projects = () => {
                                 />
                             </div>
                             <div className='col-span-12'>
-                            <FeaturedProject 
+                                <FeaturedProject 
                                     title="Solar Flare Intensity Data Visualization"
                                     img={project4}
                                     summary="The Helios project aims to develop a system for analyzing high-intensity solar flare events using RHESSI data

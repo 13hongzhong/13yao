@@ -73,7 +73,13 @@ const Illustrations = () => {
       <TransitionEffect />
 
       <Background>
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col"
+             style={{ 
+               backgroundColor: '#f4f5f6',
+               backgroundImage: "url('images/background/square.png')",
+               backgroundRepeat: 'repeat',
+               backgroundSize: '400px 400px'
+             }}>
           <div className="flex-grow">
             {sections.map((section, sectionIndex) => (
               <div key={sectionIndex} className="container mx-auto p-4">
