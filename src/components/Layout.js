@@ -39,6 +39,7 @@ const Layout = () => {
     graduated with a bachelor's degree in Computer Science. I am currently learning how to draw in my free time and brushing up on 
     cybersecurity. I also enjoy creating games, designing websites, data science, and anything tech-related! I’m open to learning about
     anything that catches my interest. Currently, I’m addicted to playing Dynasty Warriors 3, Ashes of the Kingdom, and Gujian 3.
+    The character on the screen is of an original character from my novel! I cherish him very much!
     If you are ever interested in working with me, please send me an email at <a className="text-darkbeige" href="mailto:cuit980@gmail.com">cuit980@gmail.com</a> !
   </p>
 </div>
