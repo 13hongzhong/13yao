@@ -7,13 +7,8 @@ import Link from 'next/link';
 
 const CustomLink = ({ href, title, className = '', onClick }) => {
   const router = useRouter();
-  const basePath = '/13yao'; // Set your base path here
-
-  // Determine if it's the homepage link
   const isHomepage = href === '/';
-  
-  // Ensure correct formatting of href based on basePath and whether it's the homepage
-  const formattedHref = isHomepage ? `${basePath}/` : `${basePath}${href}`;
+  const formattedHref = isHomepage ? '/13yao/' : `/${href}`; // Ensure trailing slash for homepage
 
   return (
     <Link href={formattedHref}>
@@ -57,11 +52,10 @@ const NavBar = () => {
 
       <div className={`w-full lg:flex lg:items-center lg:justify-between ${isOpen ? 'hidden lg:flex' : 'hidden'}`}>
         <nav className="flex flex-col lg:flex-row lg:items-center">
-          {/* Ensure to pass correct hrefs to CustomLink */}
           <CustomLink href="/" title="&#10047; Home" className='lg:mr-4' onClick={handleClick} />
-          <CustomLink href="/skills" title="&#10047; Skills" className='lg:mx-4' onClick={handleClick} />
-          <CustomLink href="/projects" title="&#10047; Projects" className='lg:mx-4' onClick={handleClick} />
-          <CustomLink href="/illustrations" title="&#10047; Illustrations" className='lg:ml-4' onClick={handleClick} />
+          <CustomLink href="skills" title="&#10047; Skills" className='lg:mx-4' onClick={handleClick} />
+          <CustomLink href="projects" title="&#10047; Projects" className='lg:mx-4' onClick={handleClick} />
+          <CustomLink href="illustrations" title="&#10047; Illustrations" className='lg:ml-4' onClick={handleClick} />
         </nav>
 
         <nav className="flex items-center justify-center mt-4 lg:mt-0">
@@ -92,11 +86,10 @@ const NavBar = () => {
         </button>
 
         <nav className="flex flex-col items-center mt-20 space-y-6">
-          {/* Ensure to pass correct hrefs to CustomLink */}
           <CustomLink href="/" title="&#10047; Home" onClick={handleClick} />
-          <CustomLink href="/skills" title="&#10047; Skills" onClick={handleClick} />
-          <CustomLink href="/projects" title="&#10047; Projects" onClick={handleClick} />
-          <CustomLink href="/illustrations" title="&#10047; Illustrations" onClick={handleClick} />
+          <CustomLink href="skills" title="&#10047; Skills" onClick={handleClick} />
+          <CustomLink href="projects" title="&#10047; Projects" onClick={handleClick} />
+          <CustomLink href="illustrations" title="&#10047; Illustrations" onClick={handleClick} />
         </nav>
 
         <nav className="flex items-center justify-center mt-8">
