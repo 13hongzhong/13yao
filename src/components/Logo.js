@@ -11,7 +11,7 @@ const Logo = () => {
                     alt="Logo"
                     width={64} 
                     height={64} 
-                    className='hidden md:hidden lg:hidden xl:inline-block' // Hide on md, sm, lg screens
+                    className='hidden md:hidden lg:hidden xl:inline-block' 
                 />
             </Link>
         </div>
