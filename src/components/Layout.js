@@ -4,7 +4,6 @@ import { LinkArrow } from './Icons';
 import Background from './Background';
 import Image from 'next/image';
 
-
 const Layout = () => {
   return (
     <Background>
@@ -13,13 +12,13 @@ const Layout = () => {
           <div className="w-full lg:w-5/12 mb-3">
             <div
               style={{
-                backgroundImage: "url('images/profile/photo1.png')",
+                backgroundImage: "url('/images/profile/photo1.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 borderRadius: '16px',
                 minHeight: '450px',
-                boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)', 
+                boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
               }}
               className="rounded-lg h-full"
             ></div>
@@ -37,8 +36,8 @@ const Layout = () => {
             </div>
             <div className="p-3 bg-gray-100 mb-3 rounded-lg overflow-auto" style={{ height: '270px', lineHeight: '1.4', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
               <p>
-                Hi! I&rsquo;m Tina, an artist and developer based in the United States. I began programming in middle school through online forum games and have now 
-                graduated with a bachelor&rsquo;s degree in Computer Science. I am currently learning how to draw in my free time and brushing up on 
+                Hi! I&rsquo;m Tina, an artist and developer based in the United States. I began programming in middle school through online forum games and have now
+                graduated with a bachelor&rsquo;s degree in Computer Science. I am currently learning how to draw in my free time and brushing up on
                 cybersecurity. I also enjoy creating games, designing websites, data science, and anything tech-related! I&rsquo;m open to learning about
                 anything that catches my interest. Currently, I&rsquo;m addicted to playing Dynasty Warriors 3, Ashes of the Kingdom, and Gujian 3.
                 The character on the screen is of an original character from my novel! I cherish him very much!
@@ -69,7 +68,7 @@ const Layout = () => {
             <div className="h-full flex flex-col justify-between">
               <div
                 style={{
-                  backgroundImage: "url('images/background/beige_paw.png')",
+                  backgroundImage: "url('/images/background/beige_paw.png')",
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   minHeight: '150px',
@@ -80,7 +79,7 @@ const Layout = () => {
               ></div>
               <div
                 style={{
-                  backgroundImage: "url('images/background/blue_paw.jpg')",
+                  backgroundImage: "url('/images/background/blue_paw.jpg')",
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   minHeight: '150px',
@@ -91,7 +90,7 @@ const Layout = () => {
               ></div>
               <div
                 style={{
-                  backgroundImage: "url('images/background/pink_paw.jpg')",
+                  backgroundImage: "url('/images/background/pink_paw.jpg')",
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   minHeight: '150px',
