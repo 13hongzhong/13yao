@@ -8,18 +8,15 @@ import { motion } from 'framer-motion';
 const CustomLink = ({ href, title, className = '', onClick }) => {
   const router = useRouter();
   const isHomepage = href === '/';
-  // Ensure formattedHref is correctly handled to avoid invalid paths
-  const formattedHref = isHomepage ? '/' : href;
+  const formattedHref = isHomepage ? `${href}/` : href;
 
   return (
-    <Link href={formattedHref}>
-      <a className={`${className} relative group`} style={{ color: '#FFFFFF' }} onClick={onClick}>
-        {title}
-        <span
-          className={`h-[1px] inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === formattedHref ? 'w-full' : 'w-0'}`}
-          style={{ backgroundColor: '#fff' }}
-        >&nbsp;</span>
-      </a>
+    <Link href={formattedHref} className={`${className} relative group`} style={{ color: '#FFFFFF' }} onClick={onClick}>
+      {title}
+      <span
+        className={`h-[1px] inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === formattedHref ? 'w-full' : 'w-0'}`}
+        style={{ backgroundColor: '#fff' }}
+      >&nbsp;</span>
     </Link>
   );
 };
