@@ -12,7 +12,7 @@ const Layout = () => {
           <div className="w-full lg:w-5/12 mb-3">
             <div
               style={{
-                backgroundImage: "url('/13yao/images/profile/photo1.png')",
+                backgroundImage: "url('13yao/images/profile/photo1.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
