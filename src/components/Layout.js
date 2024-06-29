@@ -1,18 +1,22 @@
 import React from 'react';
 import Link from 'next/link';
 import { LinkArrow } from '../components/Icons';
-import Background from '../components/Background';
 import Image from 'next/image';
 
 const Layout = () => {
   return (
-    <Background>
+    <main className="flex items-center justify-center text-dark w-full min-h-screen" style={{ 
+        backgroundColor: '#f4f5f6',
+        backgroundImage: "url('/13yao/images/background/square.png')",
+        backgroundRepeat: 'repeat',
+        backgroundSize: '400px 400px'
+    }}>
       <div className="container mx-auto my-5 p-3 rounded-lg shadow-lg" style={{ maxWidth: '1200px', backgroundColor: '#f3f4f6' }}>
         <div className="flex flex-wrap">
           <div className="w-full lg:w-5/12 mb-3">
             <div
               style={{
-                backgroundImage: "url('13yao/images/profile/photo1.png')",
+                backgroundImage: "url('/13yao/images/profile/photo1.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -103,7 +107,7 @@ const Layout = () => {
           </div>
         </div>
       </div>
-    </Background>
+    </main>
   );
 };
 
