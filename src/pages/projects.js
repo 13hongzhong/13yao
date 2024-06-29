@@ -6,7 +6,12 @@ import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import Image from 'next/image';
 import { AltGithubIcon } from '@/components/Icons';
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/let-meowt.png";
+import project2 from "../../public/images/projects/mfa.png";
+import project3 from "../../public/images/projects/fuelcaster.png";
+import project4 from "../../public/images/projects/solar.png";
+import project5 from "../../public/images/projects/juv.png";
+import project6 from "../../public/images/projects/portfolio.png";
 import TransitionEffect from '@/components/TransitionEffect';
 
 
@@ -76,37 +81,7 @@ const projects = () => {
                     <Skeleton className='pt-16'> 
                         <div className='grid grid-cols-12 gap-6 md:gap-8 lg:gap-12'>
                             <div className='col-span-12'>
-                                <FeaturedProject 
-                                    title="Solar Flare Intensity Data Visualization"
-                                    img={project1}
-                                    summary="The Helios project aims to develop a system for analyzing high-intensity solar flare events using RHESSI data
-                                     from 2004-2005. The study focused on estimating solar flare intensities and mapping flare hotspots to identify temporal changes
-                                    like flare concentration around the solar equator and potential cyclic patterns."
-                                    link="https://github.com/13hongzhong/Project-Helios"
-                                    github="https://github.com/13hongzhong/Project-Helios"
-                                    type="Featured Project"
-                                />
-                            </div>
-                            <div className='col-span-12 md:col-span-6'>
-                                <Project 
-                                    title="Fine Arts Museum Database"
-                                    img={project1}
-                                    link="https://github.com/ashishs1812/cosc3380fall23-team4"
-                                    github="https://github.com/ashishs1812/cosc3380fall23-team4"
-                                    type="Web Application"
-                                />
-                            </div>
-                            <div className='col-span-12 md:col-span-6'>
-                                <Project 
-                                    title="Fuel Delivery Cost Web Application"
-                                    img={project1}
-                                    link="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
-                                    github="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
-                                    type="Web Application"
-                                />
-                            </div>
-                            <div className='col-span-12'>
-                                <FeaturedProject 
+                            <FeaturedProject 
                                     title="Let Meowt"
                                     img={project1}
                                     summary="An RPG horror game made in Godot 4 where the player must help a cat escape from the captivity of an evil grandma, 
@@ -118,8 +93,38 @@ const projects = () => {
                             </div>
                             <div className='col-span-12 md:col-span-6'>
                                 <Project 
+                                    title="Fine Arts Museum Database"
+                                    img={project2}
+                                    link="https://github.com/ashishs1812/cosc3380fall23-team4"
+                                    github="https://github.com/ashishs1812/cosc3380fall23-team4"
+                                    type="Web Application"
+                                />
+                            </div>
+                            <div className='col-span-12 md:col-span-6'>
+                                <Project 
+                                    title="Fuel Delivery Cost Web Application"
+                                    img={project3}
+                                    link="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
+                                    github="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
+                                    type="Web Application"
+                                />
+                            </div>
+                            <div className='col-span-12'>
+                            <FeaturedProject 
+                                    title="Solar Flare Intensity Data Visualization"
+                                    img={project4}
+                                    summary="The Helios project aims to develop a system for analyzing high-intensity solar flare events using RHESSI data
+                                     from 2004-2005. The study focused on estimating solar flare intensities and mapping flare hotspots to identify temporal changes
+                                    like flare concentration around the solar equator and potential cyclic patterns."
+                                    link="https://github.com/13hongzhong/Project-Helios"
+                                    github="https://github.com/13hongzhong/Project-Helios"
+                                    type="Featured Project"
+                                />
+                            </div>
+                            <div className='col-span-12 md:col-span-6'>
+                                <Project 
                                     title="Juvenile Criminal Behavior"
-                                    img={project1}
+                                    img={project5}
                                     link="https://github.com/13hongzhong/Juvenile-Criminal-Behavior"
                                     github="https://github.com/13hongzhong/Juvenile-Criminal-Behavior"
                                     type="Data Visualization"
@@ -128,7 +133,7 @@ const projects = () => {
                             <div className='col-span-12 md:col-span-6'>
                                 <Project 
                                     title="Personal Portfolio Website"
-                                    img={project1}
+                                    img={project6}
                                     link="https://github.com/13hongzhong/Portfolio-Website"
                                     github="https://github.com/13hongzhong/Portfolio-Website"
                                     type="Static Website"
