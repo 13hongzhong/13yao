@@ -1,20 +1,25 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { TwitterIcon, GithubIcon, LinkedInIcon } from './Icons';
-import Logo from '../components/Logo';
 import { motion } from 'framer-motion';
 
 const CustomLink = ({ href, title, className = '', onClick }) => {
   const router = useRouter();
-  const fullPath = `${router.basePath}${href}`;
+  const fullPath = href.endsWith('/') ? href : `${href}/`; // Ensure the link has a trailing slash
+
   return (
-    <Link href={fullPath} className={`${className} relative group`} style={{ color: '#FFFFFF' }} onClick={onClick}>
-      {title}
-      <span
-        className={`h-[1px] inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === fullPath ? 'w-full' : 'w-0'}`}
-        style={{ backgroundColor: '#fff' }}
-      >&nbsp;</span>
+    <Link href={fullPath} passHref>
+      <a className={`${className} relative group`} style={{ color: '#FFFFFF' }} onClick={onClick}>
+        {title}
+        <span
+          className={`h-[1px] inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+            router.asPath === fullPath ? 'w-full' : 'w-0'
+          }`}
+          style={{ backgroundColor: '#fff' }}
+        >
+          &nbsp;
+        </span>
+      </a>
     </Link>
   );
 };
@@ -61,10 +66,9 @@ const NavBar = () => {
           <motion.a href="https://github.com/13hongzhong" target="_blank" className="w-6 mx-3" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
             <GithubIcon style={{ fill: '#FFFFFF' }} />
           </motion.a>
-          {/* <motion.a href="https://linkedin.com" target="_blank" className="w-6 ml-3" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
-          <LinkedInIcon style={{ fill: '#FFFFFF' }} />
-          </motion.a> */}
-
+          <motion.a href="https://linkedin.com" target="_blank" className="w-6 ml-3" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+            <LinkedInIcon style={{ fill: '#FFFFFF' }} />
+          </motion.a>
         </nav>
       </div>
 
