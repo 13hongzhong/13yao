@@ -34,11 +34,16 @@ const NavBar = () => {
       setIsOpen(false);
     };
 
+    // Check if we are on the homepage without a trailing slash
+    if (router.pathname === '/' && router.asPath === '/13yao') {
+      router.replace('/13yao/');
+    }
+
     router.events.on('routeChangeComplete', handleRouteChange);
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
-  }, [router.events]);
+  }, [router]);
 
   return (
     <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative' style={{ backgroundColor: '#efcdc2' }}>
