@@ -34,15 +34,15 @@ const Layout = () => {
               </div>
             </div>
             <div className="p-3 bg-gray-100 mb-3 rounded-lg overflow-auto" style={{ height: '270px', lineHeight: '1.4', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
-              <p>
-              Hi! I’m Tina, an artist and developer based in the US. I began programming in middle school through online forum games and 
-              have now graduated with a bachelor degree in Computer Science! I am currently learning how to draw in my freetime and brushing up 
-              on cybersecurity. I also enjoy creating games, designing websites, data science, and anything tech related! I’m open 
-              to learning about anything that catches my interest! Currently, I’m addicted to playing Dynasty Warrior 3, Ashes of the Kingdom
-              , and Baldur’s Gate 3. If you are ever interested in working with me, please sent me an email at cuit980@gmail !
+  <p>
+    Hi! I’m Tina, an artist and developer based in the US. I began programming in middle school through online forum games and have now 
+    graduated with a bachelor's degree in Computer Science. I am currently learning how to draw in my free time and brushing up on 
+    cybersecurity. I also enjoy creating games, designing websites, data science, and anything tech-related! I’m open to learning about
+    anything that catches my interest. Currently, I’m addicted to playing Dynasty Warriors 3, Ashes of the Kingdom, and Gujian 3.
+    If you are ever interested in working with me, please send me an email at <a className="text-darkbeige" href="mailto:cuit980@gmail.com">cuit980@gmail.com</a> !
+  </p>
+</div>
 
-              </p>
-            </div>
 
             <div className='flex justify-center lg:self-center md:mb-9 md:mt-9 sm:mt-6 sm:mb-6 mb-4'>
               <div className='flex'>
