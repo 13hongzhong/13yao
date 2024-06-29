@@ -2,7 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import { LinkArrow } from './Icons';
 import Background from './Background';
-import Image from 'next/image'; 
+import Image from 'next/image';
+
 
 const Layout = () => {
   return (
@@ -10,12 +11,21 @@ const Layout = () => {
       <div className="container mx-auto my-5 p-3 rounded-lg shadow-lg" style={{ maxWidth: '1200px', backgroundColor: '#f3f4f6' }}>
         <div className="flex flex-wrap">
           <div className="w-full lg:w-5/12 mb-3">
-            <div className="rounded-lg h-full relative">
-              <Image src="/images/profile/photo1.png" layout="fill" objectFit="cover" className="rounded-lg" />
-            </div>
+            <div
+              style={{
+                backgroundImage: "url('images/profile/photo1.png')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '16px',
+                minHeight: '450px',
+                boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)', 
+              }}
+              className="rounded-lg h-full"
+            ></div>
           </div>
           <div className="w-full lg:w-5/12 px-3">
-            <div className="relative py-3 mb-3 rounded-lg" style={{ backgroundColor: '#d7d7d7', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
+            <div className="relative py-3 mb-3 rounded-lg" style={{ backgroundColor: ' #d7d7d7', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
               <div className="text-white text-center py-3">
                 <h1 className="text-3xl font-bold uppercase mb-1" style={{ letterSpacing: '2.5px' }}>
                   Tina ✿ 崔黛倩
@@ -57,15 +67,39 @@ const Layout = () => {
           </div>
           <div className="w-full lg:w-2/12">
             <div className="h-full flex flex-col justify-between">
-              <div className="mb-3">
-                <Image src="/images/background/beige_paw.png" layout="fill" objectFit="cover" className="rounded-lg" />
-              </div>
-              <div className="mb-3">
-                <Image src="/images/background/blue_paw.jpg" layout="fill" objectFit="cover" className="rounded-lg" />
-              </div>
-              <div className="mb-3">
-                <Image src="/images/background/pink_paw.jpg" layout="fill" objectFit="cover" className="rounded-lg" />
-              </div>
+              <div
+                style={{
+                  backgroundImage: "url('images/background/beige_paw.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  minHeight: '150px',
+                  borderRadius: '16px',
+                  boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+                }}
+                className="mb-3"
+              ></div>
+              <div
+                style={{
+                  backgroundImage: "url('images/background/blue_paw.jpg')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  minHeight: '150px',
+                  borderRadius: '16px',
+                  boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+                }}
+                className="mb-3"
+              ></div>
+              <div
+                style={{
+                  backgroundImage: "url('images/background/pink_paw.jpg')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  minHeight: '150px',
+                  borderRadius: '16px',
+                  boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+                }}
+                className="mb-3"
+              ></div>
             </div>
           </div>
         </div>
