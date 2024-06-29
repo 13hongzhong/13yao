@@ -16,7 +16,7 @@ const Pagedoll = () => {
 
     return (
         <div>
-            <a href="https://toyhou.se/25710871.f2u-pagedoll-with-audio" target="_blank" rel="noopener noreferrer">
+            <a target="_blank" rel="noopener noreferrer">
                 <i className="fa-solid fa-code fixed bottom-4 right-4 z-[10]"></i>
             </a>
             <div className="hidden md:block fixed bottom-5 right-4 z-[50] max-w-[15%] cursor-pointer" onClick={handleClick}>
@@ -25,13 +25,13 @@ const Pagedoll = () => {
                     <div className="absolute top-0 left-0 w-full h-full z-[10]"></div>
                 </div>
                 <Image 
-                    src="/images/profile/doll.gif" 
+                    src="images/profile/doll.gif" 
                     alt="Pagedoll Character" 
-                    width={150} // Adjust the width according to your needs
-                    height={150} // Adjust the height according to your needs
+                    width={150} 
+                    height={150} 
                 />
                 <audio id="pagedoll-audio" loop>
-                    <source src="/images/profile/music.mp3" type="audio/mpeg" />
+                    <source src="images/profile/music.mp3" type="audio/mpeg" />
                 </audio>
             </div>
         </div>

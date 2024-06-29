@@ -18,7 +18,7 @@ const Skills = () => {
 
             <main className="flex items-center justify-center text-dark w-full min-h-screen" style={{ 
                 backgroundColor: '#f4f5f6',
-                backgroundImage: "url('/images/background/square.png')",
+                backgroundImage: "url('images/background/square.png')",
                 backgroundRepeat: 'repeat',
                 backgroundSize: '400px 400px'
             }}>
@@ -27,7 +27,7 @@ const Skills = () => {
                         <div className="lg:w-3/12 w-full lg:order-2 order-1 mb-3 px-3">
                             <div className="bg-white rounded-xl p-3">
                                 <Image
-                                    src="/images/profile/baiban2.png"
+                                    src="images/profile/baiban2.png"
                                     className="block p-2 mx-auto mb-3 rounded-full"
                                     style={{ maxHeight: '210px', maxWidth: '210px', background: '#d4e7ef' }}  
                                     alt="Avatar"
@@ -66,7 +66,7 @@ const Skills = () => {
                                     <div className="bg-white rounded-xl h-full">
                                         <div
                                             className="h-full bg-cover bg-center"
-                                            style={{ backgroundImage: 'url(/images/profile/baiban1.png)', minHeight: '400px' }}
+                                            style={{ backgroundImage: 'url(images/profile/baiban1.png)', minHeight: '400px' }}
                                         ></div>
                                     </div>
                                 </div>

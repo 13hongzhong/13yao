@@ -22,7 +22,7 @@ const sections = [
       'images/illustrations/4.png',
       'images/illustrations/5.png',
       'images/illustrations/6.png',
-      '/images/illustrations/7.png',
+      'images/illustrations/7.png',
       'images/illustrations/8.png',
     ]
   },

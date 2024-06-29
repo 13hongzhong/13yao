@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import { LinkArrow } from './Icons';
 import Background from './Background';
+import Image from 'next/image';
+
 
 const Layout = () => {
   return (
@@ -11,7 +13,7 @@ const Layout = () => {
           <div className="w-full lg:w-5/12 mb-3">
             <div
               style={{
-                backgroundImage: "url('/images/profile/photo1.png')",
+                backgroundImage: "url('images/profile/photo1.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -46,7 +48,7 @@ const Layout = () => {
             <div className='flex justify-center lg:self-center md:mb-9 md:mt-9 sm:mt-6 sm:mb-6 mb-4'>
               <div className='flex'>
                 <Link
-                  href="/dummy.pdf"
+                  href="/Tina_Cui_Resume_6_27_24.pdf"
                   target="_blank"
                   className="flex items-center bg-beige text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-beige border-2 border-solid border-transparent hover:border-pink"
                   download={true}
@@ -67,7 +69,7 @@ const Layout = () => {
             <div className="h-full flex flex-col justify-between">
               <div
                 style={{
-                  backgroundImage: "url('/images/background/beige_paw.png')",
+                  backgroundImage: "url('images/background/beige_paw.png')",
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   minHeight: '150px',
@@ -78,7 +80,7 @@ const Layout = () => {
               ></div>
               <div
                 style={{
-                  backgroundImage: "url('/images/background/blue_paw.jpg')",
+                  backgroundImage: "url('images/background/blue_paw.jpg')",
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   minHeight: '150px',
@@ -89,7 +91,7 @@ const Layout = () => {
               ></div>
               <div
                 style={{
-                  backgroundImage: "url('/images/background/pink_paw.jpg')",
+                  backgroundImage: "url('images/background/pink_paw.jpg')",
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   minHeight: '150px',
