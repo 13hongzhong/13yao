@@ -14,7 +14,7 @@ import project5 from "../../public/images/projects/juv.png";
 import project6 from "../../public/images/projects/portfolio.png";
 import TransitionEffect from '@/components/TransitionEffect';
 
-const Project = ({title, type, img, link, github}) => {
+const Project = ({ title, type, img, link, github }) => {
     return (
         <article className="w-full flex flex-col items-center justify-center rounded-2xl bg-light p-6 relative lg:flex-row lg:p-8">
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-darkpink rounded-br-3xl shadow-md' />
@@ -39,8 +39,8 @@ const Project = ({title, type, img, link, github}) => {
     )
 }
 
-const FeaturedProject = ({type, title, summary, img, link, github}) => {
-    return(
+const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+    return (
         <article className='w-full flex flex-col items-center justify-between relative rounded-br-2xl rounded-3xl bg-light shadow-1xl p-6 lg:flex-row lg:p-12'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-darkpink rounded-br-3xl shadow-md' />
             <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg lg:w-1/2'>
@@ -84,8 +84,8 @@ const projects = () => {
                         backgroundSize: '400px 400px'
                       }}>
                     <Skeleton className='pt-16'> 
-                        <div className='grid grid-cols-12 gap-6 md:gap-8 lg:gap-12'>
-                            <div className='col-span-12'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12'>
+                            <div className='col-span-1 md:col-span-2'>
                                 <FeaturedProject 
                                     title="Let Meowt"
                                     img={project1}
@@ -96,7 +96,7 @@ const projects = () => {
                                     type="Featured Project"
                                 />
                             </div>
-                            <div className='col-span-12 md:col-span-6'>
+                            <div className='col-span-1'>
                                 <Project 
                                     title="Fine Arts Museum Database"
                                     img={project2}
@@ -105,7 +105,7 @@ const projects = () => {
                                     type="Web Application"
                                 />
                             </div>
-                            <div className='col-span-12 md:col-span-6'>
+                            <div className='col-span-1'>
                                 <Project 
                                     title="Fuel Delivery Cost Web Application"
                                     img={project3}
@@ -114,7 +114,7 @@ const projects = () => {
                                     type="Web Application"
                                 />
                             </div>
-                            <div className='col-span-12'>
+                            <div className='col-span-1 md:col-span-2'>
                                 <FeaturedProject 
                                     title="Solar Flare Intensity Data Visualization"
                                     img={project4}
@@ -126,7 +126,7 @@ const projects = () => {
                                     type="Featured Project"
                                 />
                             </div>
-                            <div className='col-span-12 md:col-span-6'>
+                            <div className='col-span-1'>
                                 <Project 
                                     title="Juvenile Criminal Behavior"
                                     img={project5}
@@ -135,7 +135,7 @@ const projects = () => {
                                     type="Data Visualization"
                                 />
                             </div>
-                            <div className='col-span-12 md:col-span-6'>
+                            <div className='col-span-1'>
                                 <Project 
                                     title="Personal Portfolio Website"
                                     img={project6}
