@@ -84,8 +84,8 @@ const projects = () => {
                         backgroundSize: '400px 400px'
                       }}>
                     <Skeleton className='pt-16'> 
-                        <div className='flex flex-col items-center'>
-                            <div className='w-full'>
+                        <div className='grid grid-cols-12 gap-6 md:gap-8 lg:gap-12'>
+                            <div className='col-span-12'>
                                 <FeaturedProject 
                                     title="Let Meowt"
                                     img={project1}
@@ -96,27 +96,25 @@ const projects = () => {
                                     type="Featured Project"
                                 />
                             </div>
-                            <div className='w-full flex flex-wrap justify-center'>
-                                <div className='w-full md:w-1/2 p-4'>
-                                    <Project 
-                                        title="Fine Arts Museum Database"
-                                        img={project2}
-                                        link="https://github.com/ashishs1812/cosc3380fall23-team4"
-                                        github="https://github.com/ashishs1812/cosc3380fall23-team4"
-                                        type="Web Application"
-                                    />
-                                </div>
-                                <div className='w-full md:w-1/2 p-4'>
-                                    <Project 
-                                        title="Fuel Delivery Cost Web Application"
-                                        img={project3}
-                                        link="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
-                                        github="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
-                                        type="Web Application"
-                                    />
-                                </div>
+                            <div className='col-span-12 md:col-span-6'>
+                                <Project 
+                                    title="Fine Arts Museum Database"
+                                    img={project2}
+                                    link="https://github.com/ashishs1812/cosc3380fall23-team4"
+                                    github="https://github.com/ashishs1812/cosc3380fall23-team4"
+                                    type="Web Application"
+                                />
                             </div>
-                            <div className='w-full'>
+                            <div className='col-span-12 md:col-span-6'>
+                                <Project 
+                                    title="Fuel Delivery Cost Web Application"
+                                    img={project3}
+                                    link="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
+                                    github="https://github.com/13hongzhong/COSC4353-Software-Design-Project"
+                                    type="Web Application"
+                                />
+                            </div>
+                            <div className='col-span-12'>
                                 <FeaturedProject 
                                     title="Solar Flare Intensity Data Visualization"
                                     img={project4}
@@ -128,25 +126,23 @@ const projects = () => {
                                     type="Featured Project"
                                 />
                             </div>
-                            <div className='w-full flex flex-wrap justify-center'>
-                                <div className='w-full md:w-1/2 p-4'>
-                                    <Project 
-                                        title="Juvenile Criminal Behavior"
-                                        img={project5}
-                                        link="https://github.com/13hongzhong/Juvenile-Criminal-Behavior"
-                                        github="https://github.com/13hongzhong/Juvenile-Criminal-Behavior"
-                                        type="Data Visualization"
-                                    />
-                                </div>
-                                <div className='w-full md:w-1/2 p-4'>
-                                    <Project 
-                                        title="Personal Portfolio Website"
-                                        img={project6}
-                                        link="https://github.com/13hongzhong/Portfolio-Website"
-                                        github="https://github.com/13hongzhong/Portfolio-Website"
-                                        type="Static Website"
-                                    />
-                                </div>
+                            <div className='col-span-12 md:col-span-6'>
+                                <Project 
+                                    title="Juvenile Criminal Behavior"
+                                    img={project5}
+                                    link="https://github.com/13hongzhong/Juvenile-Criminal-Behavior"
+                                    github="https://github.com/13hongzhong/Juvenile-Criminal-Behavior"
+                                    type="Data Visualization"
+                                />
+                            </div>
+                            <div className='col-span-12 md:col-span-6'>
+                                <Project 
+                                    title="Personal Portfolio Website"
+                                    img={project6}
+                                    link="https://github.com/13hongzhong/Portfolio-Website"
+                                    github="https://github.com/13hongzhong/Portfolio-Website"
+                                    type="Static Website"
+                                />
                             </div>
                         </div>
                     </Skeleton>
