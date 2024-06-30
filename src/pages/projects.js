@@ -16,7 +16,7 @@ import TransitionEffect from '@/components/TransitionEffect';
 
 const Project = ({ title, type, img, link, github }) => {
     return (
-        <article className="w-full flex flex-col items-center justify-center rounded-2xl bg-light p-6 relative lg:flex-row lg:p-8 sm:pr-4">
+        <article className="w-full max-w-screen-lg mx-auto flex flex-col items-center justify-center rounded-2xl bg-light p-6 relative lg:flex-row lg:p-8 sm:pr-4">
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-darkpink rounded-br-3xl shadow-md' />
             <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg lg:w-1/2'>
                 <Image src={img} alt={title} className="w-full h-auto max-w-full" />
@@ -41,7 +41,7 @@ const Project = ({ title, type, img, link, github }) => {
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     return (
-        <article className='w-full flex flex-col items-center justify-between relative rounded-br-2xl rounded-3xl bg-light shadow-1xl p-6 lg:flex-row lg:p-12 sm:pr-4'>
+        <article className='w-full max-w-screen-lg mx-auto flex flex-col items-center justify-between relative rounded-br-2xl rounded-3xl bg-light shadow-1xl p-6 lg:flex-row lg:p-12 sm:pr-4'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-darkpink rounded-br-3xl shadow-md' />
             <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg lg:w-1/2'>
                 <Image src={img} alt={title} className="w-full h-auto max-w-full" />
