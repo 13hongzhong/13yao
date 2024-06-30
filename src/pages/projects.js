@@ -2,7 +2,6 @@ import Background from '@/components/Background';
 import React from 'react';
 import Head from 'next/head';
 import Skeleton from '@/components/Skeleton';
-import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import Image from 'next/image';
 import { AltGithubIcon } from '@/components/Icons';
