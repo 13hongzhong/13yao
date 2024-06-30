@@ -2,7 +2,6 @@ import Background from '@/components/Background';
 import React from 'react';
 import Head from 'next/head';
 import Skeleton from '@/components/Skeleton';
-import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import Image from 'next/image';
 import { AltGithubIcon } from '@/components/Icons';
@@ -96,7 +95,7 @@ const projects = () => {
                                     type="Featured Project"
                                 />
                             </div>
-                            <div className='col-span-12 md:col-span-6 flex justify-center'>
+                            <div className='col-span-12 flex justify-center'>
                                 <Project 
                                     title="Fine Arts Museum Database"
                                     img={project2}
@@ -105,7 +104,7 @@ const projects = () => {
                                     type="Web Application"
                                 />
                             </div>
-                            <div className='col-span-12 md:col-span-6 flex justify-center'>
+                            <div className='col-span-12 flex justify-center'>
                                 <Project 
                                     title="Fuel Delivery Cost Web Application"
                                     img={project3}
@@ -126,7 +125,7 @@ const projects = () => {
                                     type="Featured Project"
                                 />
                             </div>
-                            <div className='col-span-12 md:col-span-6 flex justify-center'>
+                            <div className='col-span-12 flex justify-center'>
                                 <Project 
                                     title="Juvenile Criminal Behavior"
                                     img={project5}
@@ -135,7 +134,7 @@ const projects = () => {
                                     type="Data Visualization"
                                 />
                             </div>
-                            <div className='col-span-12 md:col-span-6 flex justify-center'>
+                            <div className='col-span-12 flex justify-center'>
                                 <Project 
                                     title="Personal Portfolio Website"
                                     img={project6}
