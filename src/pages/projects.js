@@ -76,7 +76,7 @@ const projects = () => {
             <TransitionEffect />
 
             <Background>
-                <main className='w-full mb-16 flex flex-col items-center justify-center'
+                <main className='w-full mb-16 flex flex-col items-center justify-center px-4 sm:px-0'
                       style={{ 
                         backgroundColor: '#f4f5f6',
                         backgroundImage: "url('images/background/square.png')",
